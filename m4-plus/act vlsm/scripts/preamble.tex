@@ -1,0 +1,15 @@
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{etoolbox}
+
+\makeatletter
+\g@addto@macro\@floatboxreset\centering
+\makeatother
+
+\setlength{\tabcolsep}{2.5pt}
+\setlength{\intextsep}{6pt plus 1pt minus 2pt}
+\setlength{\textfloatsep}{6pt plus 1pt minus 2pt}
+
+\AtBeginEnvironment{Highlighting}{\small}
+\AtBeginEnvironment{verbatim}{\small}
