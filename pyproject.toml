@@ -1,0 +1,86 @@
+[project]
+name = "tc3003b"
+version = "0.1.0"
+description = "Coursework monorepo for TC3003B"
+readme = "README.md"
+authors = [
+    { name = "Daniel Monroy", email = "fernandodms04@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "great-tables>=1.0.0",
+    "ipykernel>=7.4.0",
+    "jupyter>=1.1.1",
+    "jupytext>=1.19.6",
+    "matplotlib>=3.10.0",
+    "networkx>=3.4.0",
+    "numpy>=2.0.0",
+    "pandas>=2.2.0",
+    "scipy>=1.14.0",
+    "seaborn>=0.13.0",
+    "tabulate>=0.10.0",
+]
+
+[project.optional-dependencies]
+m4-plus-act-vlsm = [
+    "great-tables>=1.0.0",
+    "ipykernel>=7.4.0",
+    "jupyter>=1.1.1",
+    "jupytext>=1.19.6",
+    "matplotlib>=3.10.0",
+    "networkx>=3.4.0",
+    "numpy>=2.0.0",
+    "pandas>=2.2.0",
+    "scipy>=1.14.0",
+    "seaborn>=0.13.0",
+    "tabulate>=0.10.0",
+]
+m4-plus = [
+    "great-tables>=1.0.0",
+    "ipykernel>=7.4.0",
+    "jupyter>=1.1.1",
+    "jupytext>=1.19.6",
+    "matplotlib>=3.10.0",
+    "networkx>=3.4.0",
+    "numpy>=2.0.0",
+    "pandas>=2.2.0",
+    "scipy>=1.14.0",
+    "seaborn>=0.13.0",
+    "tabulate>=0.10.0",
+]
+
+[dependency-groups]
+m4-plus-act-vlsm = [
+    "great-tables>=1.0.0",
+    "ipykernel>=7.4.0",
+    "jupyter>=1.1.1",
+    "jupytext>=1.19.6",
+    "matplotlib>=3.10.0",
+    "networkx>=3.4.0",
+    "numpy>=2.0.0",
+    "pandas>=2.2.0",
+    "scipy>=1.14.0",
+    "seaborn>=0.13.0",
+    "tabulate>=0.10.0",
+]
+m4-plus = [
+    "great-tables>=1.0.0",
+    "ipykernel>=7.4.0",
+    "jupyter>=1.1.1",
+    "jupytext>=1.19.6",
+    "matplotlib>=3.10.0",
+    "networkx>=3.4.0",
+    "numpy>=2.0.0",
+    "pandas>=2.2.0",
+    "scipy>=1.14.0",
+    "seaborn>=0.13.0",
+    "tabulate>=0.10.0",
+]
+
+[tool.uv.workspace]
+members = [
+    "m4-plus/act vlsm",
+]
+
+[tool.uv]
+package = false
