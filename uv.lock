@@ -19,7 +19,7 @@ members = [
 [[package]]
 name = "act-vlsm"
 version = "0.1.0"
-source = { editable = "m4-plus/act vlsm" }
+source = { editable = "m4-plus/act-vlsm" }
 dependencies = [
     { name = "great-tables" },
     { name = "ipykernel" },

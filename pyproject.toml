@@ -79,7 +79,7 @@ m4-plus = [
 
 [tool.uv.workspace]
 members = [
-    "m4-plus/act vlsm",
+    "m4-plus/act-vlsm",
 ]
 
 [tool.uv]
