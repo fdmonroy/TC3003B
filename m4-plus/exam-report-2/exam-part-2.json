@@ -1,0 +1,556 @@
+[
+  {
+    "description": {
+      "images": [],
+      "text": "Pregunta 30What does the IP address 192.168.1.15/29 represent?"
+    },
+    "answers": [
+      {
+        "text": "subnetwork address",
+        "correct": false
+      },
+      {
+        "text": "multicast address",
+        "correct": false
+      },
+      {
+        "text": "unicast address",
+        "correct": false
+      },
+      {
+        "text": "broadcast address",
+        "correct": true
+      }
+    ],
+    "gotCorrect": true,
+    "id": "47353642"
+  },
+  {
+    "description": {
+      "images": [],
+      "text": "Pregunta 31What type of address is 198.133.219.162?"
+    },
+    "answers": [
+      {
+        "text": "loopback",
+        "correct": false
+      },
+      {
+        "text": "multicast",
+        "correct": false
+      },
+      {
+        "text": "link-local",
+        "correct": false
+      },
+      {
+        "text": "public",
+        "correct": true
+      }
+    ],
+    "gotCorrect": true,
+    "id": "47353643"
+  },
+  {
+    "description": {
+      "images": [],
+      "text": "Pregunta 32Given network 172.18.109.0, which subnet mask would be used if 6 host bits were available?"
+    },
+    "answers": [
+      {
+        "text": "255.255.255.192",
+        "correct": true
+      },
+      {
+        "text": "255.255.224.0",
+        "correct": false
+      },
+      {
+        "text": "255.255.255.252",
+        "correct": false
+      },
+      {
+        "text": "255.255.255.248",
+        "correct": false
+      },
+      {
+        "text": "255.255.192.0",
+        "correct": false
+      }
+    ],
+    "gotCorrect": false,
+    "id": "47353644"
+  },
+  {
+    "description": {
+      "images": [
+        "https://experiencia21.tec.mx/courses/703411/files/295951459/preview"
+      ],
+      "text": "Pregunta 33Refer to the exhibit. A user issues the command netstat -r on a workstation. Which IPv6 address is one of the link-local addresses of the workstation?"
+    },
+    "answers": [
+      {
+        "text": "fe80::30d0:115:3f57:fe4c/128",
+        "correct": true
+      },
+      {
+        "text": "::1/128",
+        "correct": false
+      },
+      {
+        "text": "fe80::/64",
+        "correct": false
+      },
+      {
+        "text": "2001:0:9d38:6ab8:30d0:115:3f57:fe4c/128",
+        "correct": false
+      }
+    ],
+    "gotCorrect": false,
+    "id": "47353645"
+  },
+  {
+    "description": {
+      "images": [],
+      "text": "Pregunta 34Which is the compressed format of the IPv6 address fe80:0000:0000:0000:0220:0b3f:f0e0:0029?"
+    },
+    "answers": [
+      {
+        "text": "fe80:9ea0::2020:0:bf:e0:9290",
+        "correct": false
+      },
+      {
+        "text": "fe80:9ea0::2020::bf:e0:9290",
+        "correct": false
+      },
+      {
+        "text": "fe80::220:b3f:f0e0:29",
+        "correct": true
+      },
+      {
+        "text": "fe80:9ea:0:2200::fe0:290",
+        "correct": false
+      }
+    ],
+    "gotCorrect": true,
+    "id": "47353646"
+  },
+  {
+    "description": {
+      "images": [],
+      "text": "Pregunta 35What type of IPv6 address is represented by ::1/128?"
+    },
+    "answers": [
+      {
+        "text": "loopback",
+        "correct": true
+      },
+      {
+        "text": "unspecified",
+        "correct": false
+      },
+      {
+        "text": "EUI-64 generated link-local",
+        "correct": false
+      },
+      {
+        "text": "global unicast",
+        "correct": false
+      }
+    ],
+    "gotCorrect": false,
+    "id": "47353647"
+  },
+  {
+    "description": {
+      "images": [],
+      "text": "Pregunta 36A network technician types the command ping 127.0.0.1 at the command prompt on a computer. What is the technician trying to accomplish?"
+    },
+    "answers": [
+      {
+        "text": "checking the IP address on the network card",
+        "correct": false
+      },
+      {
+        "text": "tracing the path to a host computer on the network and the network has the IP address 127.0.0.1",
+        "correct": false
+      },
+      {
+        "text": "pinging a host computer that has the IP address 127.0.0.1 on the network",
+        "correct": false
+      },
+      {
+        "text": "testing the integrity of the TCP/IP stack on the local machine",
+        "correct": true
+      }
+    ],
+    "gotCorrect": true,
+    "id": "47353648"
+  },
+  {
+    "description": {
+      "images": [],
+      "text": "Pregunta 38Network information:• local router LAN interface: 172.19.29.254 / fe80:65ab:dec1::10• local router WAN interface: 198.133.219.33 / 2001:db8:FACE:39::10• remote server: 192.135.250.103What task might a user be trying to accomplish by using the ping 2001:db8:FACE:39::10 command?"
+    },
+    "answers": [
+      {
+        "text": "determining the path to reach the remote server",
+        "correct": false
+      },
+      {
+        "text": "verifying that there is connectivity within the local network",
+        "correct": false
+      },
+      {
+        "text": "creating a network performance benchmark to a server on the company intranet",
+        "correct": false
+      },
+      {
+        "text": "verifying that there is connectivity to the Internet",
+        "correct": true
+      }
+    ],
+    "gotCorrect": true,
+    "id": "47353650"
+  },
+  {
+    "description": {
+      "images": [
+        "https://experiencia21.tec.mx/courses/703411/files/295951460/preview"
+      ],
+      "text": "Pregunta 39Refer to the exhibit. What does the value of the window size specify?"
+    },
+    "answers": [
+      {
+        "text": "the total number of bits received during this TCP session",
+        "correct": false
+      },
+      {
+        "text": "the amount of data that can be sent at one time",
+        "correct": false
+      },
+      {
+        "text": "a random number that is used in establishing a connection with the 3-way handshake",
+        "correct": false
+      },
+      {
+        "text": "the amount of data that can be sent before an acknowledgment is required",
+        "correct": true
+      }
+    ],
+    "gotCorrect": false,
+    "id": "47353651"
+  },
+  {
+    "description": {
+      "images": [],
+      "text": "Pregunta 40A client packet is received by a server. The packet has a destination port number of 22. What service is the client requesting?"
+    },
+    "answers": [
+      {
+        "text": "TFTP",
+        "correct": false
+      },
+      {
+        "text": "DNS",
+        "correct": false
+      },
+      {
+        "text": "SSH",
+        "correct": true
+      },
+      {
+        "text": "DHCP",
+        "correct": false
+      }
+    ],
+    "gotCorrect": true,
+    "id": "47353652"
+  },
+  {
+    "description": {
+      "images": [],
+      "text": "Pregunta 41To which TCP port group does the port 414 belong?"
+    },
+    "answers": [
+      {
+        "text": "well-known",
+        "correct": true
+      },
+      {
+        "text": "private or dynamic",
+        "correct": false
+      },
+      {
+        "text": "registered",
+        "correct": false
+      },
+      {
+        "text": "public",
+        "correct": false
+      }
+    ],
+    "gotCorrect": false,
+    "id": "47353653"
+  },
+  {
+    "description": {
+      "images": [],
+      "text": "Pregunta 42Two students are working on a network design project. One student is doing the drawing, while the other student is writing the proposal. The drawing is finished and the student wants to share the folder that contains the drawing so that the other student can access the file and copy it to a USB drive. Which networking model is being used?"
+    },
+    "answers": [
+      {
+        "text": "peer-to-peer",
+        "correct": true
+      },
+      {
+        "text": "point-to-point",
+        "correct": false
+      },
+      {
+        "text": "master-slave",
+        "correct": false
+      },
+      {
+        "text": "client-based",
+        "correct": false
+      }
+    ],
+    "gotCorrect": true,
+    "id": "47353654"
+  },
+  {
+    "description": {
+      "images": [],
+      "text": "Pregunta 43Which command is used to manually query a DNS server to resolve a specific host name?"
+    },
+    "answers": [
+      {
+        "text": "tracert",
+        "correct": false
+      },
+      {
+        "text": "nslookup",
+        "correct": true
+      },
+      {
+        "text": "ipconfig /displaydns",
+        "correct": false
+      },
+      {
+        "text": "net",
+        "correct": false
+      }
+    ],
+    "gotCorrect": true,
+    "id": "47353655"
+  },
+  {
+    "description": {
+      "images": [],
+      "text": "Pregunta 44What service is provided by POP3?"
+    },
+    "answers": [
+      {
+        "text": "Allows remote access to network devices and servers.",
+        "correct": false
+      },
+      {
+        "text": "An application that allows real-time chatting among remote users.",
+        "correct": false
+      },
+      {
+        "text": "Uses encryption to provide secure remote access to network devices and servers.",
+        "correct": false
+      },
+      {
+        "text": "Retrieves email from the server by downloading the email to the local mail application of the client.",
+        "correct": true
+      }
+    ],
+    "gotCorrect": true,
+    "id": "47353656"
+  },
+  {
+    "description": {
+      "images": [],
+      "text": "Pregunta 45The employees and residents of Ciscoville cannot access the Internet or any remote web-based services. IT workers quickly determine that the city firewall is being flooded with so much traffic that a breakdown of connectivity to the Internet is occurring. Which type of attack is being launched at Ciscoville?"
+    },
+    "answers": [
+      {
+        "text": "DoS",
+        "correct": true
+      },
+      {
+        "text": "access",
+        "correct": false
+      },
+      {
+        "text": "Trojan horse",
+        "correct": false
+      },
+      {
+        "text": "reconnaissance",
+        "correct": false
+      }
+    ],
+    "gotCorrect": true,
+    "id": "47353657"
+  },
+  {
+    "description": {
+      "images": [],
+      "text": "Pregunta 46A network administrator is issuing the login block-for 180 attempts 2 within 30 command on a router. Which threat is the network administrator trying to prevent?"
+    },
+    "answers": [
+      {
+        "text": "a user who is trying to guess a password to access the router",
+        "correct": true
+      },
+      {
+        "text": "a worm that is attempting to access another part of the network",
+        "correct": false
+      },
+      {
+        "text": "a device that is trying to inspect the traffic on a link",
+        "correct": false
+      },
+      {
+        "text": "an unidentified individual who is trying to access the network equipment room",
+        "correct": false
+      }
+    ],
+    "gotCorrect": true,
+    "id": "47353658"
+  },
+  {
+    "description": {
+      "images": [],
+      "text": "Pregunta 47Which statement describes the characteristics of packet-filtering and stateful firewalls as they relate to the OSI model?"
+    },
+    "answers": [
+      {
+        "text": "A packet-filtering firewall uses session layer information to track the state of a connection, whereas a stateful firewall uses application layer information to track the state of a connection.",
+        "correct": false
+      },
+      {
+        "text": "A stateful firewall can filter application layer information, whereas a packet-filtering firewall cannot filter beyond the network layer.",
+        "correct": false
+      },
+      {
+        "text": "Both stateful and packet-filtering firewalls can filter at the application layer.",
+        "correct": false
+      },
+      {
+        "text": "A packet-filtering firewall typically can filter up to the transport layer, whereas a stateful firewall can filter up to the session layer.",
+        "correct": true
+      }
+    ],
+    "gotCorrect": false,
+    "id": "47353659"
+  },
+  {
+    "description": {
+      "images": [],
+      "text": "Pregunta 50A small advertising company has a web server that provides critical business service. The company connects to the Internet through a leased line service to an ISP. Which approach best provides cost effective redundancy for the Internet connection?"
+    },
+    "answers": [
+      {
+        "text": "Add another web server to prepare failover support.",
+        "correct": false
+      },
+      {
+        "text": "Add multiple connections between the switches and the edge router.",
+        "correct": false
+      },
+      {
+        "text": "Add a second NIC to the web server.",
+        "correct": false
+      },
+      {
+        "text": "Add a connection to the Internet via a DSL line to another ISP.",
+        "correct": true
+      }
+    ],
+    "gotCorrect": true,
+    "id": "47353662"
+  },
+  {
+    "description": {
+      "images": [],
+      "text": "Pregunta 51Only employees connected to IPv6 interfaces are having difficulty connecting to remote networks. The analyst wants to verify that IPv6 routing has been enabled. What is the best command to use to accomplish the task?"
+    },
+    "answers": [
+      {
+        "text": "show running-config",
+        "correct": true
+      },
+      {
+        "text": "show interfaces",
+        "correct": false
+      },
+      {
+        "text": "show ip nat translations",
+        "correct": false
+      },
+      {
+        "text": "copy running-config startup-config",
+        "correct": false
+      }
+    ],
+    "gotCorrect": false,
+    "id": "47353663"
+  },
+  {
+    "description": {
+      "images": [],
+      "text": "Pregunta 52What happens when a switch receives a frame and the calculated CRC value is different than the value that is in the FCS field?"
+    },
+    "answers": [
+      {
+        "text": "The switch floods the frame to all ports except the port through which the frame arrived to notify the hosts of the error.",
+        "correct": false
+      },
+      {
+        "text": "The switch places the new CRC value in the FCS field and forwards the frame.",
+        "correct": false
+      },
+      {
+        "text": "The switch notifies the source of the bad frame.",
+        "correct": false
+      },
+      {
+        "text": "The switch drops the frame.",
+        "correct": true
+      }
+    ],
+    "gotCorrect": false,
+    "id": "47353664"
+  },
+  {
+    "description": {
+      "images": [],
+      "text": "Pregunta 54Two network engineers are discussing the methods used to forward frames through a switch. What is an important concept related to the cut-through method of switching?"
+    },
+    "answers": [
+      {
+        "text": "Packets can be relayed with errors when fast-forward switching is used.",
+        "correct": true
+      },
+      {
+        "text": "Fragment-free switching is the typical cut-through method of switching.",
+        "correct": false
+      },
+      {
+        "text": "Fast-forward switching can be viewed as a compromise between store-and-forward switching and fragment-free switching.",
+        "correct": false
+      },
+      {
+        "text": "The fragment-free switching offers the lowest level of latency.",
+        "correct": false
+      }
+    ],
+    "gotCorrect": true,
+    "id": "47353666"
+  }
+]

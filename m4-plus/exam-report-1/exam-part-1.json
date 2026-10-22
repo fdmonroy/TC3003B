@@ -1,0 +1,548 @@
+[
+  {
+    "description": {
+      "images": [],
+      "text": "Pregunta 01What characteristic describes spyware?"
+    },
+    "answers": [
+      {
+        "text": "the use of stolen credentials to access private data",
+        "correct": false
+      },
+      {
+        "text": "an attack that slows or crashes a device or network service",
+        "correct": false
+      },
+      {
+        "text": "a network device that filters access and traffic coming into a network",
+        "correct": false
+      },
+      {
+        "text": "software that is installed on a user device and collects information about the user",
+        "correct": true
+      }
+    ],
+    "gotCorrect": true,
+    "id": "47353613"
+  },
+  {
+    "description": {
+      "images": [],
+      "text": "Pregunta 02Which statement describes network security?"
+    },
+    "answers": [
+      {
+        "text": "It ensures sensitive corporate data is available for authorized users.",
+        "correct": true
+      },
+      {
+        "text": "It supports growth over time in accordance with approved network design procedures.",
+        "correct": false
+      },
+      {
+        "text": "It prioritizes data flows in order to give priority to delay-sensitive traffic.",
+        "correct": false
+      },
+      {
+        "text": "It synchronizes traffic flows using timestamps.",
+        "correct": false
+      }
+    ],
+    "gotCorrect": true,
+    "id": "47353614"
+  },
+  {
+    "description": {
+      "images": [],
+      "text": "Pregunta 04What is a user trying to determine when issuing a ping 10.1.1.1 command on a PC?"
+    },
+    "answers": [
+      {
+        "text": "if the TCP/IP stack is functioning on the PC without putting traffic on the wire",
+        "correct": false
+      },
+      {
+        "text": "if there is connectivity with the destination device",
+        "correct": true
+      },
+      {
+        "text": "what type of device is at the destination",
+        "correct": false
+      },
+      {
+        "text": "the path that traffic will take to reach the destination",
+        "correct": false
+      }
+    ],
+    "gotCorrect": true,
+    "id": "47353616"
+  },
+  {
+    "description": {
+      "images": [
+        "https://experiencia21.tec.mx/courses/703411/files/295951450/preview"
+      ],
+      "text": "Pregunta 05Refer to the exhibit. An administrator is trying to configure the switch but receives the error message that is displayed in the exhibit. What is the problem?"
+    },
+    "answers": [
+      {
+        "text": "The administrator is already in global configuration mode.",
+        "correct": false
+      },
+      {
+        "text": "The entire command, configure terminal, must be used.",
+        "correct": false
+      },
+      {
+        "text": "The administrator must first enter privileged EXEC mode before issuing the command.",
+        "correct": true
+      },
+      {
+        "text": "The administrator must connect via the console port to access global configuration mode.",
+        "correct": false
+      }
+    ],
+    "gotCorrect": true,
+    "id": "47353617"
+  },
+  {
+    "description": {
+      "images": [],
+      "text": "Pregunta 06What is a characteristic of a switch virtual interface (SVI)?"
+    },
+    "answers": [
+      {
+        "text": "An SVI is created in software and requires a configured IP address and a subnet mask in order to provide remote access to the switch.",
+        "correct": true
+      },
+      {
+        "text": "SVIs come preconfigured on Cisco switches.",
+        "correct": false
+      },
+      {
+        "text": "Although it is a virtual interface, it needs to have physical hardware on the device associated with it.",
+        "correct": false
+      },
+      {
+        "text": "SVIs do not require the no shutdown command to become enabled.",
+        "correct": false
+      }
+    ],
+    "gotCorrect": true,
+    "id": "47353618"
+  },
+  {
+    "description": {
+      "images": [],
+      "text": "Pregunta 09Which PDU is processed when a host computer is de-encapsulating a message at the transport layer of the TCP/IP model?"
+    },
+    "answers": [
+      {
+        "text": "bits",
+        "correct": false
+      },
+      {
+        "text": "segment",
+        "correct": true
+      },
+      {
+        "text": "frame",
+        "correct": false
+      },
+      {
+        "text": "packet",
+        "correct": false
+      }
+    ],
+    "gotCorrect": true,
+    "id": "47353621"
+  },
+  {
+    "description": {
+      "images": [
+        "https://experiencia21.tec.mx/courses/703411/files/295951446/preview"
+      ],
+      "text": "Pregunta 11Refer to the exhibit. What is the maximum possible throughput between the PC and the server?"
+    },
+    "answers": [
+      {
+        "text": "1000 Mb/s",
+        "correct": false
+      },
+      {
+        "text": "100 Mb/s",
+        "correct": false
+      },
+      {
+        "text": "128 kb/s",
+        "correct": true
+      },
+      {
+        "text": "10 Mb/s",
+        "correct": false
+      }
+    ],
+    "gotCorrect": true,
+    "id": "47353623"
+  },
+  {
+    "description": {
+      "images": [],
+      "text": "Pregunta 14What OSI physical layer term describes the measure of the transfer of bits across a medium over a given period of time?"
+    },
+    "answers": [
+      {
+        "text": "goodput",
+        "correct": false
+      },
+      {
+        "text": "throughput",
+        "correct": true
+      },
+      {
+        "text": "latency",
+        "correct": false
+      },
+      {
+        "text": "bandwidth",
+        "correct": false
+      }
+    ],
+    "gotCorrect": true,
+    "id": "47353626"
+  },
+  {
+    "description": {
+      "images": [],
+      "text": "Pregunta 15Although CSMA/CD is still a feature of Ethernet, why is it no longer necessary?"
+    },
+    "answers": [
+      {
+        "text": "the use of full-duplex capable Layer 2 switches",
+        "correct": true
+      },
+      {
+        "text": "the use of CSMA/CA",
+        "correct": false
+      },
+      {
+        "text": "the development of half-duplex switch operation",
+        "correct": false
+      },
+      {
+        "text": "the virtually unlimited availability of IPv6 addresses",
+        "correct": false
+      },
+      {
+        "text": "the use of Gigabit Ethernet speeds",
+        "correct": false
+      }
+    ],
+    "gotCorrect": false,
+    "id": "47353627"
+  },
+  {
+    "description": {
+      "images": [],
+      "text": "Pregunta 17A network team is comparing topologies for connecting on a shared media. Which physical topology is an example of a hybrid topology for a LAN?"
+    },
+    "answers": [
+      {
+        "text": "ring",
+        "correct": false
+      },
+      {
+        "text": "extended star",
+        "correct": true
+      },
+      {
+        "text": "bus",
+        "correct": false
+      },
+      {
+        "text": "partial mesh",
+        "correct": false
+      }
+    ],
+    "gotCorrect": false,
+    "id": "47353629"
+  },
+  {
+    "description": {
+      "images": [],
+      "text": "Pregunta 18What does a router do when it receives a Layer 2 frame over the network medium?"
+    },
+    "answers": [
+      {
+        "text": "forwards the new frame appropriate to the medium of that segment of the physical network",
+        "correct": false
+      },
+      {
+        "text": "de-encapsulates the frame",
+        "correct": true
+      },
+      {
+        "text": "determines the best path",
+        "correct": false
+      },
+      {
+        "text": "re-encapsulates the packet into a new frame",
+        "correct": false
+      }
+    ],
+    "gotCorrect": false,
+    "id": "47353630"
+  },
+  {
+    "description": {
+      "images": [],
+      "text": "Pregunta 19If the default gateway is configured incorrectly on the host, what is the impact on communications?"
+    },
+    "answers": [
+      {
+        "text": "The host can communicate with other hosts on the local network, but is unable to communicate with hosts on remote networks.",
+        "correct": true
+      },
+      {
+        "text": "There is no impact on communications.",
+        "correct": false
+      },
+      {
+        "text": "The host is unable to communicate on the local network.",
+        "correct": false
+      },
+      {
+        "text": "The host can communicate with other hosts on remote networks, but is unable to communicate with hosts on the local network.",
+        "correct": false
+      }
+    ],
+    "gotCorrect": true,
+    "id": "47353631"
+  },
+  {
+    "description": {
+      "images": [],
+      "text": "Pregunta 20Why is NAT not needed in IPv6?"
+    },
+    "answers": [
+      {
+        "text": "Any host or user can get a public IPv6 network address because the number of available IPv6 addresses is extremely large.",
+        "correct": true
+      },
+      {
+        "text": "Because IPv6 has integrated security, there is no need to hide the IPv6 addresses of internal networks.",
+        "correct": false
+      },
+      {
+        "text": "The end-to-end connectivity problems that are caused by NAT are solved because the number of routes increases with the number of nodes that are connected to the Internet.",
+        "correct": false
+      },
+      {
+        "text": "The problems that are induced by NAT applications are solved because the IPv6 header improves packet handling by intermediate routers.",
+        "correct": false
+      }
+    ],
+    "gotCorrect": true,
+    "id": "47353632"
+  },
+  {
+    "description": {
+      "images": [],
+      "text": "Pregunta 21What routing table entry has a next hop address associated with a destination network?"
+    },
+    "answers": [
+      {
+        "text": "C and L source routes",
+        "correct": false
+      },
+      {
+        "text": "local routes",
+        "correct": false
+      },
+      {
+        "text": "remote routes",
+        "correct": true
+      },
+      {
+        "text": "directly-connected routes",
+        "correct": false
+      }
+    ],
+    "gotCorrect": false,
+    "id": "47353633"
+  },
+  {
+    "description": {
+      "images": [],
+      "text": "Pregunta 22Which term describes a field in the IPv4 packet header that contains a unicast, multicast, or broadcast address?"
+    },
+    "answers": [
+      {
+        "text": "header checksum",
+        "correct": false
+      },
+      {
+        "text": "protocol",
+        "correct": false
+      },
+      {
+        "text": "TTL",
+        "correct": false
+      },
+      {
+        "text": "destination IPv4 address",
+        "correct": true
+      }
+    ],
+    "gotCorrect": false,
+    "id": "47353634"
+  },
+  {
+    "description": {
+      "images": [
+        "https://experiencia21.tec.mx/courses/703411/files/295951447/preview"
+      ],
+      "text": "Pregunta 23Refer to the exhibit. PC1 issues an ARP request because it needs to send a packet to PC3. In this scenario, what will happen next?"
+    },
+    "answers": [
+      {
+        "text": "RT1 will send an ARP reply with the PC3 MAC address.",
+        "correct": false
+      },
+      {
+        "text": "RT1 will send an ARP reply with its own Fa0/0 MAC address.",
+        "correct": true
+      },
+      {
+        "text": "RT1 will forward the ARP request to PC3.",
+        "correct": false
+      },
+      {
+        "text": "SW1 will send an ARP reply with its Fa0/1 MAC address.",
+        "correct": false
+      }
+    ],
+    "gotCorrect": false,
+    "id": "47353635"
+  },
+  {
+    "description": {
+      "images": [],
+      "text": "Pregunta 24Which destination address is used in an ARP request frame?"
+    },
+    "answers": [
+      {
+        "text": "255.255.255.255",
+        "correct": false
+      },
+      {
+        "text": "the physical address of the destination host",
+        "correct": false
+      },
+      {
+        "text": "FFFF.FFFF.FFFF",
+        "correct": true
+      },
+      {
+        "text": "0.0.0.0",
+        "correct": false
+      },
+      {
+        "text": "AAAA.AAAA.AAAA",
+        "correct": false
+      }
+    ],
+    "gotCorrect": true,
+    "id": "47353636"
+  },
+  {
+    "description": {
+      "images": [
+        "https://experiencia21.tec.mx/courses/703411/files/295951448/preview"
+      ],
+      "text": "Pregunta 25Refer to the exhibit. The exhibit shows a small switched network and the contents of the MAC address table of the switch. PC1 has sent a frame addressed to PC3. What will the switch do with the frame?"
+    },
+    "answers": [
+      {
+        "text": "The switch will forward the frame only to ports 1 and 3.",
+        "correct": false
+      },
+      {
+        "text": "The switch will forward the frame only to port 2.",
+        "correct": false
+      },
+      {
+        "text": "The switch will discard the frame.",
+        "correct": false
+      },
+      {
+        "text": "The switch will forward the frame to all ports.",
+        "correct": false
+      },
+      {
+        "text": "The switch will forward the frame to all ports except port 4.",
+        "correct": true
+      }
+    ],
+    "gotCorrect": false,
+    "id": "47353637"
+  },
+  {
+    "description": {
+      "images": [],
+      "text": "Pregunta 27A router boots and enters setup mode. What is the reason for this?"
+    },
+    "answers": [
+      {
+        "text": "The POST process has detected hardware failure.",
+        "correct": false
+      },
+      {
+        "text": "Cisco IOS is missing from flash memory.",
+        "correct": false
+      },
+      {
+        "text": "The IOS image is corrupt.",
+        "correct": false
+      },
+      {
+        "text": "The configuration file is missing from NVRAM.",
+        "correct": true
+      }
+    ],
+    "gotCorrect": true,
+    "id": "47353639"
+  },
+  {
+    "description": {
+      "images": [
+        "https://experiencia21.tec.mx/courses/703411/files/295951449/preview"
+      ],
+      "text": "Pregunta 28Refer to the exhibit. A network administrator is connecting a new host to the Registrar LAN. The host needs to communicate with remote networks. What IP address would be configured as the default gateway on the new host?"
+    },
+    "answers": [
+      {
+        "text": "203.0.113.3",
+        "correct": false
+      },
+      {
+        "text": "10.234.235.254",
+        "correct": false
+      },
+      {
+        "text": "192.168.235.1",
+        "correct": false
+      },
+      {
+        "text": "192.168.234.114",
+        "correct": false
+      },
+      {
+        "text": "192.168.235.234",
+        "correct": true
+      }
+    ],
+    "gotCorrect": false,
+    "id": "47353640"
+  }
+]
