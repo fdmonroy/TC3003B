@@ -1,0 +1,13 @@
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\captionsetup[table]{position=bottom, skip=6pt}
+\captionsetup[figure]{position=bottom, skip=6pt}
+\floatplacement{figure}{H}
+\floatplacement{table}{H}
+\makeatletter
+\g@addto@macro\@floatboxreset\centering
+\makeatother
+\AtBeginDocument{\renewcommand{\tablename}{Tabla}\renewcommand{\figurename}{Figura}}
