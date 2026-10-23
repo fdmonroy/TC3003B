@@ -12,18 +12,18 @@ lang: es-MX
 
 # Resumen de resultados (Parte 1)
 
-En la parte 1 de la evaluación diagnóstica CCNA Practice Final (ITN v7.0) se respondieron 20 reactivos (Preguntas 12 a 31), obteniendo 12 aciertos y 8 errores. Este documento desarrolla la revisión técnica de las 8 preguntas incorrectas conforme al material oficial de Cisco Networking Academy (*Introduction to Networks v7.0*), incluyendo el enunciado original, la respuesta correcta y la explicación del funcionamiento de protocolo en cada caso.
+En la parte 1 de la evaluación diagnóstica CCNA Practice Final (ITN v7.0) se respondieron 20 reactivos (Preguntas 12 a 31), obteniendo 12 aciertos y 8 errores. Este documento desarrolla la revisión técnica de las 8 preguntas incorrectas conforme al material oficial de Cisco Networking Academy (*Introduction to Networks v7.0*), asociando a cada pregunta las secciones exactas del curso donde se localiza el contenido para su consulta y captura de pantalla.
 
-| Reactivo | Tema del currículo Cisco ITN v7.0 | Módulo | Estado |
-| :--- | :--- | :---: | :---: |
-| **Pregunta 15** | Control de acceso al medio y operación en dúplex completo | Módulo 7 (7.1.3) | Corregido |
-| **Pregunta 17** | Topologías físicas LAN e híbridas | Módulo 6 (6.2.4) | Corregido |
-| **Pregunta 18** | Procesamiento y desencapsulación de tramas en Capa 2 | Módulo 6 (6.1.3) | Corregido |
-| **Pregunta 21** | Estructura de la tabla de enrutamiento y rutas remotas | Módulo 8 (8.5.2) | Corregido |
-| **Pregunta 22** | Campos del encabezado del paquete IPv4 | Módulo 8 (8.2.2) | Corregido |
-| **Pregunta 23** | Resolución ARP hacia destinos en redes remotas | Módulo 9 (9.2.5) | Corregido |
-| **Pregunta 25** | Reenvío e inundación en la tabla MAC del switch | Módulo 7 (7.3.2) | Corregido |
-| **Pregunta 28** | Configuración de puerta de enlace predeterminada en LAN | Módulo 10 (10.3.1) | Corregido |
+| Reactivo | Tema evaluado | Módulos y temas de consulta en Cisco ITN | Estado |
+| :--- | :--- | :--- | :---: |
+| **Pregunta 15** | Acceso al medio y dúplex en conmutación | Módulo 6 (6.2.5, 6.2.7), Módulo 7 (7.1.3, 7.4.4) | Corregido |
+| **Pregunta 17** | Topologías LAN físicas e híbridas | Módulo 6 (6.2.4), Módulo 1 (1.3.2) | Corregido |
+| **Pregunta 18** | Procesamiento y desencapsulación de tramas | Módulo 6 (6.1.3), Módulo 3 (3.6.5), Módulo 8 (8.5.1) | Corregido |
+| **Pregunta 21** | Rutas remotas y salto siguiente en tabla IP | Módulo 8 (8.5.2, 8.5.6, 8.5.5) | Corregido |
+| **Pregunta 22** | Campos de dirección en el encabezado IPv4 | Módulo 8 (8.2.1, 8.2.2) | Corregido |
+| **Pregunta 23** | Solicitud ARP hacia redes remotas | Módulo 9 (9.2.2, 9.2.4, 9.2.5), Módulo 3 (3.7.7) | Corregido |
+| **Pregunta 25** | Tabla MAC y reenvío de unicast desconocido | Módulo 7 (7.3.1, 7.3.2, 7.3.3) | Corregido |
+| **Pregunta 28** | Puerta de enlace predeterminada en LAN | Módulo 10 (10.3.1, 10.2.1), Módulo 8 (8.4.2, 8.4.3) | Corregido |
 
 ---
 
@@ -39,7 +39,11 @@ En la parte 1 de la evaluación diagnóstica CCNA Practice Final (ITN v7.0) se r
 > * the virtually unlimited availability of IPv6 addresses
 > * the use of Gigabit Ethernet speeds
 
-### Explicación y fundamento técnico (Módulo 7: Ethernet Switching, Tema 7.1.3)
+### Explicación y fundamento técnico
+
+* **Ubicación exacta en Cisco ITN:**
+  * Módulo 6 (*Data Link Layer*): Tema 6.2.5 (*Half and Full Duplex Communication*) y Tema 6.2.7 (*Contention Based Access - CSMA/CD*).
+  * Módulo 7 (*Ethernet Switching*): Tema 7.1.3 (*MAC Sublayer*) y Tema 7.4.4 (*Duplex and Speed Settings*).
 
 El protocolo CSMA/CD (*Carrier Sense Multiple Access with Collision Detection*) se diseñó para redes Ethernet antiguas que operaban en modo semidúplex sobre un medio compartido, como el cable coaxial en topología de bus o los concentradores (*hubs*) de Capa 1. Cuando varios nodos transmitían de forma simultánea por el mismo canal físico, las señales eléctricas se superponían y generaban una colisión. CSMA/CD detectaba esa colisión y aplicaba un temporizador de retroceso aleatorio (*backoff*) antes de reintentar el envío.
 
@@ -65,7 +69,11 @@ Las demás opciones se descartan por los siguientes motivos:
 > * bus
 > * partial mesh
 
-### Explicación y fundamento técnico (Módulo 6: Data Link Layer, Tema 6.2.4)
+### Explicación y fundamento técnico
+
+* **Ubicación exacta en Cisco ITN:**
+  * Módulo 6 (*Data Link Layer*): Tema 6.2.4 (*LAN Topologies*).
+  * Módulo 1 (*Networking Today*): Tema 1.3.2 (*Topology Diagrams*).
 
 Las topologías físicas de una red de área local (LAN) definen cómo se interconectan físicamente los dispositivos finales e intermedios:
 
@@ -89,7 +97,12 @@ La topología en estrella extendida se clasifica como una topología híbrida pa
 > * determines the best path
 > * re-encapsulates the packet into a new frame
 
-### Explicación y fundamento técnico (Módulo 6: Data Link Layer, Tema 6.1.3)
+### Explicación y fundamento técnico
+
+* **Ubicación exacta en Cisco ITN:**
+  * Módulo 6 (*Data Link Layer*): Tema 6.1.3 (*Providing Access to Media*).
+  * Módulo 3 (*Protocols and Models*): Tema 3.6.5 (*De-encapsulation Example*).
+  * Módulo 8 (*Network Layer*): Tema 8.5.1 (*Router Packet Forwarding Decision*).
 
 Cuando un router recibe una trama a través de una de sus interfaces de red, ejecuta una secuencia ordenada de 4 etapas para trasladar el paquete entre enlaces:
 
@@ -113,7 +126,12 @@ La pregunta solicita específicamente la acción inmediata que realiza el router
 > * **remote routes (Respuesta correcta)**
 > * directly connected routes
 
-### Explicación y fundamento técnico (Módulo 8: Network Layer, Tema 8.5.2)
+### Explicación y fundamento técnico
+
+* **Ubicación exacta en Cisco ITN:**
+  * Módulo 8 (*Network Layer*): Tema 8.5.2 (*IP Router Routing Table*).
+  * Módulo 8 (*Network Layer*): Tema 8.5.5 (*Video - IPv4 Router Routing Tables*).
+  * Módulo 8 (*Network Layer*): Tema 8.5.6 (*Introduction to an IPv4 Routing Table*).
 
 La tabla de enrutamiento de un router Cisco IOS almacena 3 categorías principales de entradas según la relación del router con la red de destino:
 
@@ -138,7 +156,11 @@ La tabla de enrutamiento de un router Cisco IOS almacena 3 categorías principal
 > * TTL
 > * **destination IPv4 address (Respuesta correcta)**
 
-### Explicación y fundamento técnico (Módulo 8: Network Layer, Tema 8.2.2)
+### Explicación y fundamento técnico
+
+* **Ubicación exacta en Cisco ITN:**
+  * Módulo 8 (*Network Layer*): Tema 8.2.1 (*IPv4 Packet Header*).
+  * Módulo 8 (*Network Layer*): Tema 8.2.2 (*IPv4 Packet Header Fields*).
 
 El encabezado de un paquete IPv4 contiene campos de control y 2 campos de direccionamiento de 32 bits:
 
@@ -165,7 +187,13 @@ Por lo tanto, el campo que puede almacenar una dirección unicast, multicast o b
 
 ![Topología de red para la Pregunta 23.](assets/pregunta_23_exhibit.png){ width=68% }
 
-### Explicación y fundamento técnico (Módulo 9: Address Resolution, Tema 9.2.5)
+### Explicación y fundamento técnico
+
+* **Ubicación exacta en Cisco ITN:**
+  * Módulo 9 (*Address Resolution*): Tema 9.2.2 (*ARP Functions*).
+  * Módulo 9 (*Address Resolution*): Tema 9.2.4 (*Video - ARP Operation - ARP Reply*).
+  * Módulo 9 (*Address Resolution*): Tema 9.2.5 (*Video - ARP Role in Remote Communications*).
+  * Módulo 3 (*Protocols and Models*): Tema 3.7.7 (*Role of the Data Link Layer Addresses - Different IP Networks*).
 
 En la topología mostrada en la imagen, `PC1` y `PC2` pertenecen a la red LAN conectada a la interfaz `Fa0/0` del router `RT1` a través del switch `SW1`, mientras que `PC3` se encuentra en una red LAN distinta conectada a la interfaz `Fa0/1` de `RT1` a través de `SW2`.
 
@@ -193,7 +221,12 @@ Los routers no reenvían solicitudes ARP en broadcast hacia otras interfaces por
 
 ![Topología y tabla MAC del switch para la Pregunta 25.](assets/pregunta_25_exhibit.png){ width=72% }
 
-### Explicación y fundamento técnico (Módulo 7: Ethernet Switching, Tema 7.3.2)
+### Explicación y fundamento técnico
+
+* **Ubicación exacta en Cisco ITN:**
+  * Módulo 7 (*Ethernet Switching*): Tema 7.3.1 (*Switch Fundamentals*).
+  * Módulo 7 (*Ethernet Switching*): Tema 7.3.2 (*Switch Learning and Forwarding*).
+  * Módulo 7 (*Ethernet Switching*): Tema 7.3.3 (*Filtering Frames*).
 
 La imagen muestra un switch con 4 dispositivos conectados:
 
@@ -225,7 +258,11 @@ Ante una trama unicast desconocida, el switch inunda (*floods*) la trama envián
 
 ![Configuración CLI del router Floor para la Pregunta 28.](assets/pregunta_28_exhibit.png){ width=78% }
 
-### Explicación y fundamento técnico (Módulo 10: Basic Router Configuration, Tema 10.3.1)
+### Explicación y fundamento técnico
+
+* **Ubicación exacta en Cisco ITN:**
+  * Módulo 10 (*Basic Router Configuration*): Tema 10.3.1 (*Default Gateway on a Host*) y Tema 10.2.1 (*Configure Router Interfaces*).
+  * Módulo 8 (*Network Layer*): Tema 8.4.2 (*Default Gateway*) y Tema 8.4.3 (*A Host Routes to the Default Gateway*).
 
 La puerta de enlace predeterminada (*default gateway*) configurada en cualquier host debe ser la dirección IP asignada a la interfaz del router que está conectada directamente a la misma red local (LAN) de ese host. Analizando las 4 interfaces configuradas en el router `Floor`:
 
