@@ -3,7 +3,7 @@ title: "Trabajo sobre CCNA Practice Final 1"
 subtitle: "Implementación de redes de área amplia y servicios distribuidos (TC3003B.570)"
 author: "Fernando Daniel Monroy Sánchez (A01750536)"
 date: "22 de octubre de 2026"
-lang: en-US
+lang: es-MX
 ---
 
 **Profesor:** Juan Manuel Campos Sandoval
@@ -11,49 +11,49 @@ lang: en-US
 ---
 
 1. Although CSMA/CD is still a feature of Ethernet, why is it no longer necessary?
-   * **Answer: the use of full-duplex capable Layer 2 switches**
-   * Legacy Ethernet LANs with hubs operate in half duplex mode, where only 1 device can send or receive at a time on the shared medium.
-   * If 2 devices transmit at the same time on a shared medium, a collision will occur, so half duplex networks require CSMA/CD to detect collisions.
-   * Modern Layer 2 Ethernet switches and NICs use full duplex communication, where the 2 ends of the connection can send and receive simultaneously without collisions.
+   * **Respuesta: the use of full-duplex capable Layer 2 switches**
+   * Las redes Ethernet antiguas con concentradores (hubs) operan en modo semidúplex, donde solo 1 dispositivo puede enviar o recibir a la vez en el medio compartido.
+   * Si 2 dispositivos transmiten al mismo tiempo en un medio compartido ocurre una colisión, por lo que las redes en semidúplex requieren CSMA/CD para detectar colisiones.
+   * Los switches Ethernet de Capa 2 y las tarjetas NIC actuales usan comunicación en dúplex completo, donde los 2 extremos envían y reciben simultáneamente sin colisiones.
 
 2. A network team is comparing topologies for connecting on a shared media. Which physical topology is an example of a hybrid topology for a LAN?
-   * **Answer: extended star**
-   * In multiaccess LANs, end devices connect to a central intermediary device such as an Ethernet switch to form a star topology.
-   * An extended star topology extends the star topology because it interconnects multiple Ethernet switches into a hybrid physical layout.
-   * Bus topologies chain end systems to each other on 1 cable, and ring topologies connect each end system to its neighbor to form a ring.
+   * **Respuesta: extended star**
+   * En las redes LAN de acceso múltiple, los dispositivos finales se conectan a un dispositivo intermedio central como un switch Ethernet para formar una topología en estrella.
+   * Una topología en estrella extendida amplía la topología en estrella porque interconecta múltiples switches Ethernet en un diseño físico híbrido.
+   * Las topologías de bus encadenan los sistemas finales entre sí en 1 cable, y las topologías de anillo conectan cada sistema con su vecino formando un anillo.
 
 3. What does a router do when it receives a Layer 2 frame over the network medium?
-   * **Answer: de-encapsulates the frame**
-   * When a router accepts a frame from a medium, it immediately deencapsulates the Layer 2 header and trailer to extract the Layer 3 PDU.
-   * Next, the router examines the destination IP address of the packet and searches its routing table for the best matching route entry.
-   * Last, the router reencapsulates the packet into a new frame and forwards the frame to the next segment of the physical network.
+   * **Respuesta: de-encapsulates the frame**
+   * Cuando un router acepta una trama desde un medio físico, de inmediato desencapsula el encabezado y el tráiler de Capa 2 para extraer la PDU de Capa 3.
+   * Después, el router examina la dirección IP de destino del paquete y busca en su tabla de enrutamiento la entrada con la mejor coincidencia.
+   * Por último, el router reencapsula el paquete dentro de una nueva trama y reenvía esa trama hacia el siguiente segmento de la red física.
 
 4. What routing table entry has a next hop address associated with a destination network?
-   * **Answer: remote routes**
-   * The routing table of a router stores 3 types of route entries: directly connected networks, remote networks, and a default route.
-   * Directly connected network entries represent active interfaces on the local router, so they do not require a next hop router address.
-   * Remote network entries represent destination networks connected to other routers, so the router forwards matching packets to the IP address of the next hop router.
+   * **Respuesta: remote routes**
+   * La tabla de enrutamiento de un router almacena 3 tipos de entradas de ruta: redes conectadas directamente, redes remotas y una ruta predeterminada.
+   * Las entradas de redes conectadas directamente representan interfaces activas del propio router local, por lo que no requieren una dirección de router de siguiente salto.
+   * Las entradas de redes remotas representan redes de destino conectadas a otros routers, por lo que el router reenvía los paquetes a la dirección IP del siguiente salto.
 
 5. Which term describes a field in the IPv4 packet header that contains a unicast, multicast, or broadcast address?
-   * **Answer: destination IPv4 address**
-   * The 20 byte IPv4 packet header contains binary fields that the Layer 3 process examines to deliver the packet to its destination end device.
-   * The Destination IP Address field contains a 32 bit binary value that represents the unicast, multicast, or broadcast address of the target host group.
-   * In contrast, the Source IP Address field always identifies 1 sending host, while Time to Live, Protocol, and Header Checksum store control values.
+   * **Respuesta: destination IPv4 address**
+   * El encabezado del paquete IPv4 de 20 bytes contiene campos binarios que el proceso de Capa 3 examina para entregar el paquete al dispositivo final de destino.
+   * El campo de dirección IPv4 de destino contiene un valor binario de 32 bits que representa la dirección unicast, multicast o broadcast del receptor.
+   * En cambio, el campo de dirección IPv4 de origen identifica siempre a 1 host emisor, mientras que TTL, Protocolo y Suma de comprobación almacenan valores de control.
 
 6. Refer to the exhibit. PC1 issues an ARP request because it needs to send a packet to PC3. In this scenario, what will happen next?
-   * **Answer: RT1 will send an ARP reply with its own Fa0/0 MAC address.**
-   * When the destination IPv4 address (PC3) is on a different network than the source (PC1), PC1 must send the frame to its default gateway (RT1).
-   * If the default gateway entry is not in the ARP table, PC1 sends an ARP request to determine the MAC address of the default gateway.
-   * Only the device with the target IPv4 address responds, so router RT1 sends a unicast ARP reply with its own Fa0/0 MAC address.
+   * **Respuesta: RT1 will send an ARP reply with its own Fa0/0 MAC address.**
+   * Cuando la dirección IPv4 de destino (PC3) pertenece a una red distinta a la de origen (PC1), PC1 debe enviar la trama a su puerta de enlace predeterminada (RT1).
+   * Si la entrada de la puerta de enlace predeterminada no figura en la tabla ARP, PC1 envía una solicitud ARP para obtener la dirección MAC de la puerta de enlace.
+   * Solo el dispositivo con la dirección IPv4 solicitada responde, por lo que el router RT1 envía una respuesta ARP unicast con su propia dirección MAC de la interfaz Fa0/0.
 
 7. Refer to the exhibit. The exhibit shows a small switched network and the contents of the MAC address table of the switch. PC1 has sent a frame addressed to PC3. What will the switch do with the frame?
-   * **Answer: The switch will forward the frame to all ports except port 4.**
-   * A Layer 2 switch forwards frames when it searches for a match between the destination MAC address in the frame and its MAC address table.
-   * If the destination unicast MAC address is not in the table, the switch forwards the frame out all ports except the incoming port.
-   * The MAC address table lacks an entry for PC3, so the switch floods this unknown unicast frame out all ports except incoming port 4.
+   * **Respuesta: The switch will forward the frame to all ports except port 4.**
+   * Un switch Ethernet de Capa 2 reenvía tramas buscando una coincidencia entre la dirección MAC de destino de la trama y una entrada en su tabla de direcciones MAC.
+   * Si la dirección MAC unicast de destino no está en la tabla, el switch reenvía la trama por todos los puertos excepto por el puerto de entrada.
+   * Como la tabla MAC no contiene la dirección MAC de PC3, el switch inunda esta trama unicast desconocida por todos los puertos excepto el puerto 4 de entrada.
 
 8. Refer to the exhibit. A network administrator is connecting a new host to the Registrar LAN. The host needs to communicate with remote networks. What IP address would be configured as the default gateway on the new host?
-   * **Answer: 192.168.235.234**
-   * A host requires a default gateway address to reach remote networks, and this address is the router interface address attached to the local network.
-   * On a Cisco router, the `description` command identifies the connected network, and the `ip address` command assigns the IPv4 address to that interface.
-   * Interface `gi0/1` has the description `Connects to the Registrar LAN` and the IPv4 address `192.168.235.234`, so hosts on that LAN must use `192.168.235.234`.
+   * **Respuesta: 192.168.235.234**
+   * Un host necesita una dirección de puerta de enlace predeterminada para alcanzar redes remotas, y esa dirección corresponde a la interfaz del router conectada a la red local.
+   * En un router Cisco, el comando `description` identifica la red conectada y el comando `ip address` asigna la dirección IPv4 y máscara a esa interfaz.
+   * La interfaz `gi0/1` tiene la descripción `Connects to the Registrar LAN` y la dirección IPv4 `192.168.235.234`, por lo que los hosts en esa LAN deben usar `192.168.235.234`.
