@@ -12,18 +12,18 @@ lang: es-MX
 
 # Resumen de resultados (Parte 2)
 
-En la parte 2 de la evaluación diagnóstica CCNA Practice Final (ITN v7.0) se respondieron 21 reactivos (Preguntas 30 a 50 y reactivos complementarios hasta la Pregunta 53), obteniendo 13 aciertos y 8 errores. Este documento desarrolla la revisión técnica de las 8 preguntas incorrectas conforme al currículo oficial de Cisco Networking Academy (*Introduction to Networks v7.0*), incluyendo el cálculo binario paso a paso de máscara de subred, el análisis de capturas y salidas de terminal, y el fundamento de cada respuesta.
+En la parte 2 de la evaluación diagnóstica CCNA Practice Final (ITN v7.0) se respondieron 21 reactivos (Preguntas 30 a 50 y reactivos complementarios hasta la Pregunta 53), obteniendo 13 aciertos y 8 errores. Este documento desarrolla la revisión técnica de las 8 preguntas incorrectas conforme al currículo oficial de Cisco Networking Academy (*Introduction to Networks v7.0*), asociando a cada pregunta las secciones exactas del curso donde se localiza el contenido para su consulta y captura de pantalla.
 
-| Reactivo | Tema del currículo Cisco ITN v7.0 | Módulo | Estado |
-| :--- | :--- | :---: | :---: |
-| **Pregunta 32** | Cálculo de máscara de subred IPv4 según bits de host | Módulo 11 (11.5.2) | Corregido |
-| **Pregunta 33** | Identificación de direcciones IPv6 link local en `netstat` | Módulo 12 (12.3.7) | Corregido |
-| **Pregunta 35** | Dirección IPv6 de loopback (`::1/128`) | Módulo 12 (12.3.3) | Corregido |
-| **Pregunta 39** | Control de flujo y tamaño de ventana (*Window Size*) en TCP | Módulo 14 (14.6.5) | Corregido |
-| **Pregunta 41** | Clasificación de rangos de puertos TCP y UDP (IANA) | Módulo 14 (14.4.3) | Corregido |
-| **Pregunta 47** | Firewalls de filtrado de paquetes y stateful en el modelo OSI | Módulo 16 (16.3.6) | Corregido |
-| **Pregunta 51** | Verificación de enrutamiento IPv6 mediante `show running-config` | Módulo 12 (12.5.1) | Corregido |
-| **Pregunta 52** | Detección de errores CRC en el campo FCS de tramas Ethernet | Módulo 7 (7.1.4) | Corregido |
+| Reactivo | Tema evaluado | Módulos y temas de consulta en Cisco ITN | Estado |
+| :--- | :--- | :--- | :---: |
+| **Pregunta 32** | Cálculo de máscara IPv4 según bits de host | Módulo 11 (11.1.2, 11.5.2, 11.6.5) | Corregido |
+| **Pregunta 33** | Dirección IPv6 link local en `netstat -r` | Módulo 8 (8.4.4), Módulo 12 (12.3.7, 12.6.2) | Corregido |
+| **Pregunta 35** | Dirección IPv6 de loopback (`::1/128`) | Módulo 12 (12.3.3, 12.2.3), Módulo 13 (13.2.2) | Corregido |
+| **Pregunta 39** | Control de flujo y ventana (*Window Size*) en TCP | Módulo 14 (14.6.5, 14.2.3) | Corregido |
+| **Pregunta 41** | Clasificación de rangos de puertos (IANA) | Módulo 14 (14.4.3) | Corregido |
+| **Pregunta 47** | Firewalls de filtrado de paquetes y stateful | Módulo 16 (16.3.5, 16.3.6) | Corregido |
+| **Pregunta 51** | Verificación de enrutamiento IPv6 (`show running-config`) | Módulo 12 (12.4.1, 12.6.4), Módulo 10 (10.2.4) | Corregido |
+| **Pregunta 52** | Detección de errores CRC y campo FCS | Módulo 7 (7.1.4, 7.4.1), Módulo 6 (6.3.2) | Corregido |
 
 ---
 
@@ -39,7 +39,12 @@ En la parte 2 de la evaluación diagnóstica CCNA Practice Final (ITN v7.0) se r
 > * 255.255.255.248
 > * 255.255.192.0
 
-### Procedimiento de cálculo paso a paso (Módulo 11: IPv4 Addressing, Tema 11.5.2)
+### Procedimiento de cálculo y fundamento técnico
+
+* **Ubicación exacta en Cisco ITN:**
+  * Módulo 11 (*IPv4 Addressing*): Tema 11.1.2 (*The Subnet Mask*).
+  * Módulo 11 (*IPv4 Addressing*): Tema 11.5.2 (*Subnet within an Octet Boundary*).
+  * Módulo 11 (*IPv4 Addressing*): Tema 11.6.5 (*Activity - Calculate the Subnet Mask*).
 
 Una dirección IPv4 y su máscara de subred tienen una longitud total de $32\text{ bits}$ divididos en 4 octetos de $8\text{ bits}$ cada uno. La relación entre los bits destinados al prefijo de red ($n$) y los bits reservados para identificar hosts ($h$) cumple la identidad:
 
@@ -79,7 +84,12 @@ Las demás opciones corresponden a cantidades distintas de bits de host: `255.25
 
 ![Tabla de enrutamiento IPv6 obtenida mediante netstat -r para la Pregunta 33.](assets/pregunta_33_exhibit.png){ width=80% }
 
-### Explicación y fundamento técnico (Módulo 12: IPv6 Addressing, Tema 12.3.7)
+### Explicación y fundamento técnico
+
+* **Ubicación exacta en Cisco ITN:**
+  * Módulo 8 (*Network Layer*): Tema 8.4.4 (*Host Routing Tables*).
+  * Módulo 12 (*IPv6 Addressing*): Tema 12.3.7 (*IPv6 LLA*) y Tema 12.6.2 (*Dynamic LLAs on Windows*).
+  * Módulo 14 (*Transport Layer*): Tema 14.4.4 (*The netstat Command*).
 
 En la tabla de enrutamiento IPv6 generada por el comando `netstat -r` en Windows, cada fila indica el tipo de destino según su prefijo y su longitud de máscara:
 
@@ -108,7 +118,12 @@ Las direcciones IPv6 de enlace local (*link local*) pertenecen al bloque `fe80::
 > * EUI-64 generated link-local
 > * global unicast
 
-### Explicación y fundamento técnico (Módulo 12: IPv6 Addressing, Tema 12.3.3)
+### Explicación y fundamento técnico
+
+* **Ubicación exacta en Cisco ITN:**
+  * Módulo 12 (*IPv6 Addressing*): Tema 12.3.3 (*Types of IPv6 Unicast Addresses*).
+  * Módulo 12 (*IPv6 Addressing*): Tema 12.2.3 (*Rule 2 - Double Colon*).
+  * Módulo 13 (*ICMP*): Tema 13.2.2 (*Ping the Loopback*).
 
 En la arquitectura de direccionamiento IPv6 existen direcciones unicast especiales con propósitos reservados por el estándar RFC 4291:
 
@@ -132,7 +147,11 @@ En la arquitectura de direccionamiento IPv6 existen direcciones unicast especial
 
 ![Captura de Wireshark del encabezado TCP con window size: 9017 para la Pregunta 39.](assets/pregunta_39_exhibit.jpg){ width=84% }
 
-### Explicación y fundamento técnico (Módulo 14: Transport Layer, Tema 14.6.5)
+### Explicación y fundamento técnico
+
+* **Ubicación exacta en Cisco ITN:**
+  * Módulo 14 (*Transport Layer*): Tema 14.6.5 (*TCP Flow Control - Window Size and Acknowledgments*).
+  * Módulo 14 (*Transport Layer*): Tema 14.2.3 (*TCP Header Fields*).
 
 En la captura de Wireshark se observa un segmento TCP cuyo encabezado resalta el campo `window size: 9017`. El tamaño de ventana (*window size*) es el mecanismo de control de flujo de la Capa 4 en TCP:
 
@@ -154,7 +173,10 @@ Es importante no confundir el tamaño de ventana con el tamaño máximo de segme
 > * registered
 > * public
 
-### Explicación y fundamento técnico (Módulo 14: Transport Layer, Tema 14.4.3)
+### Explicación y fundamento técnico
+
+* **Ubicación exacta en Cisco ITN:**
+  * Módulo 14 (*Transport Layer*): Tema 14.4.3 (*Port Number Groups*).
 
 La autoridad de asignación de números de Internet (IANA, *Internet Assigned Numbers Authority*) divide los $65536$ puertos posibles de $16\text{ bits}$ ($0$ a $65535$) de los protocolos TCP y UDP en 3 grupos numéricos estrictos:
 
@@ -179,7 +201,11 @@ Como el número `414` se cumple dentro del intervalo $0 \le 414 \le 1023$, perte
 > * Both stateful and packet-filtering firewalls can filter at the application layer.
 > * **A packet-filtering firewall typically can filter up to the transport layer, whereas a stateful firewall can filter up to the session layer. (Respuesta correcta)**
 
-### Explicación y fundamento técnico (Módulo 16: Network Security Fundamentals, Tema 16.3.6)
+### Explicación y fundamento técnico
+
+* **Ubicación exacta en Cisco ITN:**
+  * Módulo 16 (*Network Security Fundamentals*): Tema 16.3.5 (*Firewalls*).
+  * Módulo 16 (*Network Security Fundamentals*): Tema 16.3.6 (*Types of Firewalls*).
 
 En el currículo de Cisco ITN v7.0, los firewalls se clasifican según las capas del modelo OSI que inspeccionan al tomar decisiones de permitido o denegado:
 
@@ -202,7 +228,12 @@ Por consiguiente, un firewall de filtrado de paquetes filtra típicamente hasta 
 > * show ip nat translations
 > * copy running-config startup-config
 
-### Explicación y fundamento técnico (Módulo 12: IPv6 Addressing, Tema 12.5.1)
+### Explicación y fundamento técnico
+
+* **Ubicación exacta en Cisco ITN:**
+  * Módulo 12 (*IPv6 Addressing*): Tema 12.4.1 (*Static GUA Configuration on a Router* - configuración de `ipv6 unicast-routing`).
+  * Módulo 12 (*IPv6 Addressing*): Tema 12.6.4 (*Verify IPv6 Address Configuration* - verificación de enrutamiento).
+  * Módulo 10 (*Basic Router Configuration*): Tema 10.2.4 (*Configuration Verification Commands* - comando `show running-config`).
 
 De manera predeterminada, un router Cisco IOS tiene habilitado el reenvío de paquetes IPv4 entre sus interfaces, pero tiene deshabilitado el enrutamiento de paquetes IPv6. Aunque las interfaces del router tengan direcciones IPv6 válidas configuradas y activas (lo cual permitiría la comunicación en el enlace local), el router no reenviará paquetes IPv6 hacia redes remotas ni enviará anuncios de router ICMPv6 (*Router Advertisements*) a menos que se ejecute en modo de configuración global el comando:
 
@@ -231,7 +262,12 @@ Las demás opciones no cumplen este objetivo:
 > * The switch notifies the source of the bad frame.
 > * **The switch drops the frame. (Respuesta correcta)**
 
-### Explicación y fundamento técnico (Módulo 7: Ethernet Switching, Tema 7.1.4)
+### Explicación y fundamento técnico
+
+* **Ubicación exacta en Cisco ITN:**
+  * Módulo 7 (*Ethernet Switching*): Tema 7.1.4 (*Ethernet Frame Fields* - campo FCS y descarte por CRC).
+  * Módulo 7 (*Ethernet Switching*): Tema 7.4.1 (*Frame Forwarding Methods on Cisco Switches* - método store and forward).
+  * Módulo 6 (*Data Link Layer*): Tema 6.3.2 (*Frame Fields* - tráiler de trama y detección de errores).
 
 El tráiler de toda trama Ethernet IEEE 802.3 concluye con el campo FCS (*Frame Check Sequence*) de $4\text{ bytes}$ ($32\text{ bits}$), el cual sirve para detectar corrupción de bits ocurrida durante la transmisión por el medio físico:
 
