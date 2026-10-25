@@ -1,556 +1,517 @@
 [
   {
-    "description": {
-      "images": [],
-      "text": "Pregunta 30What does the IP address 192.168.1.15/29 represent?"
-    },
-    "answers": [
+    "question_number": 1,
+    "global_question_number": 29,
+    "question": "Three devices are on three different subnets. Match the network address and the broadcast address with each subnet where these devices are located. Device 1: IP address 192.168.10.77/28 on subnet 1. Device 2: IP address 192.168.10.17/30 on subnet 2. Device 3: IP address 192.168.10.35/29 on subnet 3.",
+    "question_type": "matching",
+    "score": 1.33,
+    "max_score": 2.0,
+    "got_correct": false,
+    "options": [
+      "192.168.10.16",
+      "192.168.10.19",
+      "192.168.10.32",
+      "192.168.10.39",
+      "192.168.10.64",
+      "192.168.10.79"
+    ],
+    "matching_pairs": [
       {
-        "text": "subnetwork address",
-        "correct": false
+        "prompt": "Subnet 1 network number",
+        "target": "192.168.10.64"
       },
       {
-        "text": "multicast address",
-        "correct": false
+        "prompt": "Subnet 2 broadcast address",
+        "target": "192.168.10.19"
       },
       {
-        "text": "unicast address",
-        "correct": false
+        "prompt": "Subnet 3 network number",
+        "target": "192.168.10.32"
       },
       {
-        "text": "broadcast address",
-        "correct": true
+        "prompt": "Subnet 1 broadcast address",
+        "target": "192.168.10.79"
+      },
+      {
+        "prompt": "Subnet 2 network number",
+        "target": "192.168.10.16"
+      },
+      {
+        "prompt": "Subnet 3 broadcast address",
+        "target": "192.168.10.39"
       }
     ],
-    "gotCorrect": true,
-    "id": "47353642"
+    "correct_answer": {
+      "Subnet 1 network number": "192.168.10.64",
+      "Subnet 2 broadcast address": "192.168.10.19",
+      "Subnet 3 network number": "192.168.10.32",
+      "Subnet 1 broadcast address": "192.168.10.79",
+      "Subnet 2 network number": "192.168.10.16",
+      "Subnet 3 broadcast address": "192.168.10.39"
+    },
+    "explanation": "Subred 1 (/28, bloques de 16): .77 cae en el bloque .64 - .79 (red: 192.168.10.64, broadcast: 192.168.10.79). Subred 2 (/30, bloques de 4): .17 cae en el bloque .16 - .19 (red: 192.168.10.16, broadcast: 192.168.10.19). Subred 3 (/29, bloques de 8): .35 cae en el bloque .32 - .39 (red: 192.168.10.32, broadcast: 192.168.10.39)."
   },
   {
-    "description": {
-      "images": [],
-      "text": "Pregunta 31What type of address is 198.133.219.162?"
-    },
-    "answers": [
-      {
-        "text": "loopback",
-        "correct": false
-      },
-      {
-        "text": "multicast",
-        "correct": false
-      },
-      {
-        "text": "link-local",
-        "correct": false
-      },
-      {
-        "text": "public",
-        "correct": true
-      }
+    "question_number": 2,
+    "global_question_number": 30,
+    "question": "What does the IP address 192.168.1.15/29 represent?",
+    "question_type": "single_choice",
+    "score": 2.0,
+    "max_score": 2.0,
+    "got_correct": true,
+    "options": [
+      "subnetwork address",
+      "multicast address",
+      "unicast address",
+      "broadcast address"
     ],
-    "gotCorrect": true,
-    "id": "47353643"
+    "correct_answer": "broadcast address",
+    "explanation": "Una máscara /29 equivale a 255.255.255.248 y crea bloques de 8 direcciones por octeto: 0–7, 8–15, 16–23, etc. En el bloque 192.168.1.8/29, la red es .8, los hosts .9–.14 y el broadcast es .15."
   },
   {
-    "description": {
-      "images": [],
-      "text": "Pregunta 32Given network 172.18.109.0, which subnet mask would be used if 6 host bits were available?"
-    },
-    "answers": [
-      {
-        "text": "255.255.255.192",
-        "correct": true
-      },
-      {
-        "text": "255.255.224.0",
-        "correct": false
-      },
-      {
-        "text": "255.255.255.252",
-        "correct": false
-      },
-      {
-        "text": "255.255.255.248",
-        "correct": false
-      },
-      {
-        "text": "255.255.192.0",
-        "correct": false
-      }
+    "question_number": 3,
+    "global_question_number": 31,
+    "question": "What type of address is 198.133.219.162?",
+    "question_type": "single_choice",
+    "score": 1.5,
+    "max_score": 1.5,
+    "got_correct": true,
+    "options": [
+      "loopback",
+      "multicast",
+      "link-local",
+      "public"
     ],
-    "gotCorrect": false,
-    "id": "47353644"
+    "correct_answer": "public",
+    "explanation": "IPv4 públicas son direcciones globales que no pertenecen a rangos especiales privados, loopback, link-local, multicast o reservados. Ejemplos privados RFC1918: 10/8, 172.16/12 y 192.168/16; link-local 169.254/16; loopback 127/8; multicast 224/4. 198.133.219.162 es una IP pública de clase unicast."
   },
   {
-    "description": {
-      "images": [
-        "https://experiencia21.tec.mx/courses/703411/files/295951459/preview"
-      ],
-      "text": "Pregunta 33Refer to the exhibit. A user issues the command netstat -r on a workstation. Which IPv6 address is one of the link-local addresses of the workstation?"
-    },
-    "answers": [
-      {
-        "text": "fe80::30d0:115:3f57:fe4c/128",
-        "correct": true
-      },
-      {
-        "text": "::1/128",
-        "correct": false
-      },
-      {
-        "text": "fe80::/64",
-        "correct": false
-      },
-      {
-        "text": "2001:0:9d38:6ab8:30d0:115:3f57:fe4c/128",
-        "correct": false
-      }
+    "question_number": 4,
+    "global_question_number": 32,
+    "question": "Given network 172.18.109.0, which subnet mask would be used if 6 host bits were available?",
+    "question_type": "single_choice",
+    "score": 0.0,
+    "max_score": 2.0,
+    "got_correct": false,
+    "options": [
+      "255.255.255.192",
+      "255.255.224.0",
+      "255.255.255.252",
+      "255.255.255.248",
+      "255.255.192.0"
     ],
-    "gotCorrect": false,
-    "id": "47353645"
+    "correct_answer": "255.255.255.192",
+    "explanation": "IPv4 usa 32 bits. Si la parte host tiene 6 bits, la red ocupa 26 bits (/26). La máscara binaria termina en 11000000 (192) y en decimal es 255.255.255.192. Cada subred /26 reúne 64 direcciones (62 hosts tradicionales), y los bloques del último octeto incrementan de 64 en 64."
   },
   {
-    "description": {
-      "images": [],
-      "text": "Pregunta 34Which is the compressed format of the IPv6 address fe80:0000:0000:0000:0220:0b3f:f0e0:0029?"
-    },
-    "answers": [
-      {
-        "text": "fe80:9ea0::2020:0:bf:e0:9290",
-        "correct": false
-      },
-      {
-        "text": "fe80:9ea0::2020::bf:e0:9290",
-        "correct": false
-      },
-      {
-        "text": "fe80::220:b3f:f0e0:29",
-        "correct": true
-      },
-      {
-        "text": "fe80:9ea:0:2200::fe0:290",
-        "correct": false
-      }
+    "question_number": 5,
+    "global_question_number": 33,
+    "question": "Refer to the exhibit. A user issues the command netstat -r on a workstation. Which IPv6 address is one of the link-local addresses of the workstation?",
+    "question_type": "single_choice",
+    "score": 0.0,
+    "max_score": 2.0,
+    "got_correct": false,
+    "options": [
+      "fe80::30d0:115:3f57:fe4c/128",
+      "::1/128",
+      "fe80::/64",
+      "2001:0:9d38:6ab8:30d0:115:3f57:fe4c/128"
     ],
-    "gotCorrect": true,
-    "id": "47353646"
+    "correct_answer": "fe80::30d0:115:3f57:fe4c/128",
+    "explanation": "Direcciones IPv6 link-local usan el prefijo fe80::/10 (en la práctica fe80::/64 para configuración y /128 cuando se especifican como host en la tabla de rutas). En la salida del comando netstat -r, la dirección que inicia con fe80:: y longitud /128 corresponde a la dirección link-local del host."
   },
   {
-    "description": {
-      "images": [],
-      "text": "Pregunta 35What type of IPv6 address is represented by ::1/128?"
-    },
-    "answers": [
-      {
-        "text": "loopback",
-        "correct": true
-      },
-      {
-        "text": "unspecified",
-        "correct": false
-      },
-      {
-        "text": "EUI-64 generated link-local",
-        "correct": false
-      },
-      {
-        "text": "global unicast",
-        "correct": false
-      }
+    "question_number": 6,
+    "global_question_number": 34,
+    "question": "Which is the compressed format of the IPv6 address fe80:0000:0000:0000:0220:0b3f:f0e0:0029?",
+    "question_type": "single_choice",
+    "score": 2.0,
+    "max_score": 2.0,
+    "got_correct": true,
+    "options": [
+      "fe80:9ea0::2020:0:bf:e0:9290",
+      "fe80:9ea0::2020::bf:e0:9290",
+      "fe80::220:b3f:f0e0:29",
+      "fe80:9ea:0:2200::fe0:290"
     ],
-    "gotCorrect": false,
-    "id": "47353647"
+    "correct_answer": "fe80::220:b3f:f0e0:29",
+    "explanation": "Reglas de compresión IPv6: elimina ceros iniciales de cada hexteto (0220 -> 220, 0b3f -> b3f, 0029 -> 29) y reemplaza una secuencia contigua única de bloques de ceros consecutivos por dos puntos dobles (::). Tres bloques contiguos :0000:0000:0000: se convierten en ::, resultando en fe80::220:b3f:f0e0:29."
   },
   {
-    "description": {
-      "images": [],
-      "text": "Pregunta 36A network technician types the command ping 127.0.0.1 at the command prompt on a computer. What is the technician trying to accomplish?"
-    },
-    "answers": [
-      {
-        "text": "checking the IP address on the network card",
-        "correct": false
-      },
-      {
-        "text": "tracing the path to a host computer on the network and the network has the IP address 127.0.0.1",
-        "correct": false
-      },
-      {
-        "text": "pinging a host computer that has the IP address 127.0.0.1 on the network",
-        "correct": false
-      },
-      {
-        "text": "testing the integrity of the TCP/IP stack on the local machine",
-        "correct": true
-      }
+    "question_number": 7,
+    "global_question_number": 35,
+    "question": "What type of IPv6 address is represented by ::1/128?",
+    "question_type": "single_choice",
+    "score": 0.0,
+    "max_score": 1.5,
+    "got_correct": false,
+    "options": [
+      "loopback",
+      "unspecified",
+      "EUI-64 generated link-local",
+      "global unicast"
     ],
-    "gotCorrect": true,
-    "id": "47353648"
+    "correct_answer": "loopback",
+    "explanation": "::1/128 es IPv6 loopback y se usa para comprobar comunicación interna del propio host. La dirección no especificada es ::/128, que significa ausencia de dirección. Las direcciones global unicast se encuentran habitualmente en 2000::/3; los link-local comienzan por fe80::/10. EUI-64 es un método histórico para construir identificadores de interfaz, no una categoría de dirección ::1."
   },
   {
-    "description": {
-      "images": [],
-      "text": "Pregunta 38Network information:• local router LAN interface: 172.19.29.254 / fe80:65ab:dec1::10• local router WAN interface: 198.133.219.33 / 2001:db8:FACE:39::10• remote server: 192.135.250.103What task might a user be trying to accomplish by using the ping 2001:db8:FACE:39::10 command?"
-    },
-    "answers": [
-      {
-        "text": "determining the path to reach the remote server",
-        "correct": false
-      },
-      {
-        "text": "verifying that there is connectivity within the local network",
-        "correct": false
-      },
-      {
-        "text": "creating a network performance benchmark to a server on the company intranet",
-        "correct": false
-      },
-      {
-        "text": "verifying that there is connectivity to the Internet",
-        "correct": true
-      }
+    "question_number": 8,
+    "global_question_number": 36,
+    "question": "A network technician types the command ping 127.0.0.1 at the command prompt on a computer. What is the technician trying to accomplish?",
+    "question_type": "single_choice",
+    "score": 1.5,
+    "max_score": 1.5,
+    "got_correct": true,
+    "options": [
+      "checking the IP address on the network card",
+      "tracing the path to a host computer on the network and the network has been configured",
+      "pinging a host computer that has the IP address 127.0.0.1 on the network",
+      "testing the integrity of the TCP/IP stack on the local machine"
     ],
-    "gotCorrect": true,
-    "id": "47353650"
+    "correct_answer": "testing the integrity of the TCP/IP stack on the local machine",
+    "explanation": "127.0.0.1 pertenece al bloque loopback 127/8; ping 127.0.0.1 envía paquetes internamente al controlador de loopback sin sacarlos al cable ni requerir enlace físico, confirmando que la pila TCP/IP del sistema operativo está instalada y operativa."
   },
   {
-    "description": {
-      "images": [
-        "https://experiencia21.tec.mx/courses/703411/files/295951460/preview"
-      ],
-      "text": "Pregunta 39Refer to the exhibit. What does the value of the window size specify?"
-    },
-    "answers": [
-      {
-        "text": "the total number of bits received during this TCP session",
-        "correct": false
-      },
-      {
-        "text": "the amount of data that can be sent at one time",
-        "correct": false
-      },
-      {
-        "text": "a random number that is used in establishing a connection with the 3-way handshake",
-        "correct": false
-      },
-      {
-        "text": "the amount of data that can be sent before an acknowledgment is required",
-        "correct": true
-      }
+    "question_number": 9,
+    "global_question_number": 37,
+    "question": "Which two ICMP messages are used by both IPv4 and IPv6 protocols? (Choose two.)",
+    "question_type": "multiple_choice",
+    "score": 2.0,
+    "max_score": 2.0,
+    "got_correct": true,
+    "options": [
+      "protocol unreachable",
+      "neighbor solicitation",
+      "router advertisement",
+      "route redirection",
+      "router solicitation"
     ],
-    "gotCorrect": false,
-    "id": "47353651"
+    "correct_answer": [
+      "protocol unreachable",
+      "route redirection"
+    ],
+    "explanation": "ICMPv4 e ICMPv6 permiten notificar errores y redirigir rutas (Redirect). Protocol Unreachable y Route Redirection son tipos presentes en ambos protocolos; Neighbor Solicitation, Router Solicitation y Router Advertisement forman parte de NDP específico de IPv6."
   },
   {
-    "description": {
-      "images": [],
-      "text": "Pregunta 40A client packet is received by a server. The packet has a destination port number of 22. What service is the client requesting?"
-    },
-    "answers": [
-      {
-        "text": "TFTP",
-        "correct": false
-      },
-      {
-        "text": "DNS",
-        "correct": false
-      },
-      {
-        "text": "SSH",
-        "correct": true
-      },
-      {
-        "text": "DHCP",
-        "correct": false
-      }
+    "question_number": 10,
+    "global_question_number": 38,
+    "question": "Network information: • local router LAN interface: 172.19.29.254 / fe80:65ab:dec1::10 • local router WAN interface: 198.133.219.33 / 2001:db8:FACE:39::10 • remote server: 192.135.250.103. What task might a user be trying to accomplish by using the ping 2001:db8:FACE:39::10 command?",
+    "question_type": "single_choice",
+    "score": 2.0,
+    "max_score": 2.0,
+    "got_correct": true,
+    "options": [
+      "determining the path to reach the remote server",
+      "verifying that there is connectivity within the local network",
+      "creating a network performance benchmark to a server on the company intranet",
+      "verifying that there is connectivity to the Internet"
     ],
-    "gotCorrect": true,
-    "id": "47353652"
+    "correct_answer": "verifying that there is connectivity to the Internet",
+    "explanation": "En el escenario mostrado, 2001:db8:FACE:39::10 representa la interfaz WAN del router que conecta hacia el ISP / Internet. Hacer ping a esa interfaz externa verifica que el tráfico atraviesa el router local hacia el enlace que conduce a Internet."
   },
   {
-    "description": {
-      "images": [],
-      "text": "Pregunta 41To which TCP port group does the port 414 belong?"
-    },
-    "answers": [
-      {
-        "text": "well-known",
-        "correct": true
-      },
-      {
-        "text": "private or dynamic",
-        "correct": false
-      },
-      {
-        "text": "registered",
-        "correct": false
-      },
-      {
-        "text": "public",
-        "correct": false
-      }
+    "question_number": 11,
+    "global_question_number": 39,
+    "question": "Refer to the exhibit. What does the value of the window size specify?",
+    "question_type": "single_choice",
+    "score": 0.0,
+    "max_score": 2.0,
+    "got_correct": false,
+    "options": [
+      "the total number of bits received during this TCP session",
+      "the amount of data that can be sent at one time",
+      "a random number that is used in establishing a connection with the 3-way handshake",
+      "the amount of data that can be sent before an acknowledgment is required"
     ],
-    "gotCorrect": false,
-    "id": "47353653"
+    "correct_answer": "the amount of data that can be sent before an acknowledgment is required",
+    "explanation": "La ventana TCP de recepción (receive window) anuncia cuántos bytes adicionales puede enviar el emisor antes de que deba esperar nuevas confirmaciones o actualización de ventana. Es un mecanismo de control de flujo, relacionado con buffer del receptor y ACK; no equivale a tamaño total de sesión ni a número de secuencia inicial."
   },
   {
-    "description": {
-      "images": [],
-      "text": "Pregunta 42Two students are working on a network design project. One student is doing the drawing, while the other student is writing the proposal. The drawing is finished and the student wants to share the folder that contains the drawing so that the other student can access the file and copy it to a USB drive. Which networking model is being used?"
-    },
-    "answers": [
-      {
-        "text": "peer-to-peer",
-        "correct": true
-      },
-      {
-        "text": "point-to-point",
-        "correct": false
-      },
-      {
-        "text": "master-slave",
-        "correct": false
-      },
-      {
-        "text": "client-based",
-        "correct": false
-      }
+    "question_number": 12,
+    "global_question_number": 40,
+    "question": "A client packet is received by a server. The packet has a destination port number of 22. What service is the client requesting?",
+    "question_type": "single_choice",
+    "score": 1.5,
+    "max_score": 1.5,
+    "got_correct": true,
+    "options": [
+      "TFTP",
+      "DNS",
+      "SSH",
+      "DHCP"
     ],
-    "gotCorrect": true,
-    "id": "47353654"
+    "correct_answer": "SSH",
+    "explanation": "TCP/22 es el puerto bien conocido de SSH, servicio de administración remota segura con autenticación y cifrado. DNS usa 53, TFTP usa UDP 69 y DHCP usa UDP 67/68."
   },
   {
-    "description": {
-      "images": [],
-      "text": "Pregunta 43Which command is used to manually query a DNS server to resolve a specific host name?"
-    },
-    "answers": [
-      {
-        "text": "tracert",
-        "correct": false
-      },
-      {
-        "text": "nslookup",
-        "correct": true
-      },
-      {
-        "text": "ipconfig /displaydns",
-        "correct": false
-      },
-      {
-        "text": "net",
-        "correct": false
-      }
+    "question_number": 13,
+    "global_question_number": 41,
+    "question": "To which TCP port group does the port 414 belong?",
+    "question_type": "single_choice",
+    "score": 0.0,
+    "max_score": 2.0,
+    "got_correct": false,
+    "options": [
+      "well-known",
+      "private or dynamic",
+      "registered",
+      "public"
     ],
-    "gotCorrect": true,
-    "id": "47353655"
+    "correct_answer": "well-known",
+    "explanation": "Puertos TCP/UDP: well-known 0–1023, registered 1024–49151, dynamic/private 49152–65535. El puerto 414 es menor a 1024 y por tanto se encuentra en well-known, independientemente del protocolo o servicio que escuche. 'Public' no es un grupo numérico oficial en esta clasificación."
   },
   {
-    "description": {
-      "images": [],
-      "text": "Pregunta 44What service is provided by POP3?"
-    },
-    "answers": [
-      {
-        "text": "Allows remote access to network devices and servers.",
-        "correct": false
-      },
-      {
-        "text": "An application that allows real-time chatting among remote users.",
-        "correct": false
-      },
-      {
-        "text": "Uses encryption to provide secure remote access to network devices and servers.",
-        "correct": false
-      },
-      {
-        "text": "Retrieves email from the server by downloading the email to the local mail application of the client.",
-        "correct": true
-      }
+    "question_number": 14,
+    "global_question_number": 42,
+    "question": "Two students are working on a network design project. One student is doing the drawing, while the other student is writing the proposal. The drawing is finished and the student wants to share the folder that contains the drawing so that the other student can access the file and copy it to a USB drive. Which networking model is being used?",
+    "question_type": "single_choice",
+    "score": 1.5,
+    "max_score": 1.5,
+    "got_correct": true,
+    "options": [
+      "peer-to-peer",
+      "point-to-point",
+      "master-slave",
+      "client-based"
     ],
-    "gotCorrect": true,
-    "id": "47353656"
+    "correct_answer": "peer-to-peer",
+    "explanation": "Peer-to-peer (P2P) permite que los equipos finales compartan recursos y archivos entre sí actuando simultáneamente como clientes y servidores, sin requerir un servidor central dedicado."
   },
   {
-    "description": {
-      "images": [],
-      "text": "Pregunta 45The employees and residents of Ciscoville cannot access the Internet or any remote web-based services. IT workers quickly determine that the city firewall is being flooded with so much traffic that a breakdown of connectivity to the Internet is occurring. Which type of attack is being launched at Ciscoville?"
-    },
-    "answers": [
-      {
-        "text": "DoS",
-        "correct": true
-      },
-      {
-        "text": "access",
-        "correct": false
-      },
-      {
-        "text": "Trojan horse",
-        "correct": false
-      },
-      {
-        "text": "reconnaissance",
-        "correct": false
-      }
+    "question_number": 15,
+    "global_question_number": 43,
+    "question": "Which command is used to manually query a DNS server to resolve a specific host name?",
+    "question_type": "single_choice",
+    "score": 1.5,
+    "max_score": 1.5,
+    "got_correct": true,
+    "options": [
+      "tracert",
+      "nslookup",
+      "ipconfig /displaydns",
+      "net"
     ],
-    "gotCorrect": true,
-    "id": "47353657"
+    "correct_answer": "nslookup",
+    "explanation": "nslookup consulta un servidor DNS para resolver nombres de host en direcciones IP o viceversa de manera interactiva o directa en la línea de comandos."
   },
   {
-    "description": {
-      "images": [],
-      "text": "Pregunta 46A network administrator is issuing the login block-for 180 attempts 2 within 30 command on a router. Which threat is the network administrator trying to prevent?"
-    },
-    "answers": [
-      {
-        "text": "a user who is trying to guess a password to access the router",
-        "correct": true
-      },
-      {
-        "text": "a worm that is attempting to access another part of the network",
-        "correct": false
-      },
-      {
-        "text": "a device that is trying to inspect the traffic on a link",
-        "correct": false
-      },
-      {
-        "text": "an unidentified individual who is trying to access the network equipment room",
-        "correct": false
-      }
+    "question_number": 16,
+    "global_question_number": 44,
+    "question": "What service is provided by POP3?",
+    "question_type": "single_choice",
+    "score": 1.5,
+    "max_score": 1.5,
+    "got_correct": true,
+    "options": [
+      "Allows remote access to network devices and servers.",
+      "An application that allows real-time chatting among remote users.",
+      "Uses encryption to provide secure remote access to network devices and servers.",
+      "Retrieves email from the server by downloading the email to the local mail application of the client."
     ],
-    "gotCorrect": true,
-    "id": "47353658"
+    "correct_answer": "Retrieves email from the server by downloading the email to the local mail application of the client.",
+    "explanation": "POP3 (Post Office Protocol v3) permite recuperar correo descargando los mensajes desde el servidor hacia el cliente de correo local, típicamente eliminándolos del servidor por defecto."
   },
   {
-    "description": {
-      "images": [],
-      "text": "Pregunta 47Which statement describes the characteristics of packet-filtering and stateful firewalls as they relate to the OSI model?"
-    },
-    "answers": [
-      {
-        "text": "A packet-filtering firewall uses session layer information to track the state of a connection, whereas a stateful firewall uses application layer information to track the state of a connection.",
-        "correct": false
-      },
-      {
-        "text": "A stateful firewall can filter application layer information, whereas a packet-filtering firewall cannot filter beyond the network layer.",
-        "correct": false
-      },
-      {
-        "text": "Both stateful and packet-filtering firewalls can filter at the application layer.",
-        "correct": false
-      },
-      {
-        "text": "A packet-filtering firewall typically can filter up to the transport layer, whereas a stateful firewall can filter up to the session layer.",
-        "correct": true
-      }
+    "question_number": 17,
+    "global_question_number": 45,
+    "question": "The employees and residents of Ciscoville cannot access the Internet or any remote web-based services. IT workers quickly determine that the city firewall is being flooded with so much traffic that a breakdown of connectivity to the Internet is occurring. Which type of attack is being launched at Ciscoville?",
+    "question_type": "single_choice",
+    "score": 1.5,
+    "max_score": 1.5,
+    "got_correct": true,
+    "options": [
+      "DoS",
+      "access",
+      "Trojan horse",
+      "reconnaissance"
     ],
-    "gotCorrect": false,
-    "id": "47353659"
+    "correct_answer": "DoS",
+    "explanation": "DoS (Denial of Service) busca degradar o interrumpir la disponibilidad de un servicio o recurso de red inundando el dispositivo con tráfico excesivo o explotando vulnerabilidades."
   },
   {
-    "description": {
-      "images": [],
-      "text": "Pregunta 50A small advertising company has a web server that provides critical business service. The company connects to the Internet through a leased line service to an ISP. Which approach best provides cost effective redundancy for the Internet connection?"
-    },
-    "answers": [
-      {
-        "text": "Add another web server to prepare failover support.",
-        "correct": false
-      },
-      {
-        "text": "Add multiple connections between the switches and the edge router.",
-        "correct": false
-      },
-      {
-        "text": "Add a second NIC to the web server.",
-        "correct": false
-      },
-      {
-        "text": "Add a connection to the Internet via a DSL line to another ISP.",
-        "correct": true
-      }
+    "question_number": 18,
+    "global_question_number": 46,
+    "question": "A network administrator is issuing the login block-for 180 attempts 2 within 30 command on a router. Which threat is the network administrator trying to prevent?",
+    "question_type": "single_choice",
+    "score": 2.0,
+    "max_score": 2.0,
+    "got_correct": true,
+    "options": [
+      "a user who is trying to guess a password to access the router",
+      "a worm that is attempting to access another part of the network",
+      "a device that is trying to inspect the traffic on a link",
+      "an unidentified individual who is trying to access the network equipment room"
     ],
-    "gotCorrect": true,
-    "id": "47353662"
+    "correct_answer": "a user who is trying to guess a password to access the router",
+    "explanation": "El comando Cisco 'login block-for 180 attempts 2 within 30' bloquea intentos de inicio de sesión durante 180 segundos si fallan 2 intentos dentro de un intervalo de 30 segundos, mitigando ataques de fuerza bruta y adivinación de contraseñas."
   },
   {
-    "description": {
-      "images": [],
-      "text": "Pregunta 51Only employees connected to IPv6 interfaces are having difficulty connecting to remote networks. The analyst wants to verify that IPv6 routing has been enabled. What is the best command to use to accomplish the task?"
-    },
-    "answers": [
-      {
-        "text": "show running-config",
-        "correct": true
-      },
-      {
-        "text": "show interfaces",
-        "correct": false
-      },
-      {
-        "text": "show ip nat translations",
-        "correct": false
-      },
-      {
-        "text": "copy running-config startup-config",
-        "correct": false
-      }
+    "question_number": 19,
+    "global_question_number": 47,
+    "question": "Which statement describes the characteristics of packet-filtering and stateful firewalls as they relate to the OSI model?",
+    "question_type": "single_choice",
+    "score": 0.0,
+    "max_score": 2.0,
+    "got_correct": false,
+    "options": [
+      "A packet-filtering firewall uses session layer information to track the state of a connection, whereas a stateful firewall uses application layer information to track the state of a connection.",
+      "A stateful firewall can filter application layer information, whereas a packet-filtering firewall cannot filter beyond the network layer.",
+      "Both stateful and packet-filtering firewalls can filter at the application layer.",
+      "A packet-filtering firewall typically can filter up to the transport layer, whereas a stateful firewall can filter up to the session layer."
     ],
-    "gotCorrect": false,
-    "id": "47353663"
+    "correct_answer": "A packet-filtering firewall typically can filter up to the transport layer, whereas a stateful firewall can filter up to the session layer.",
+    "explanation": "Packet-filtering tradicional examina encabezados de red/transporte (IP, TCP/UDP, puertos, protocolo) y aplica reglas sin contexto completo de sesión. Stateful firewall rastrea conexiones y sus estados; el curso aproxima esta función a la capa de sesión OSI."
   },
   {
-    "description": {
-      "images": [],
-      "text": "Pregunta 52What happens when a switch receives a frame and the calculated CRC value is different than the value that is in the FCS field?"
-    },
-    "answers": [
-      {
-        "text": "The switch floods the frame to all ports except the port through which the frame arrived to notify the hosts of the error.",
-        "correct": false
-      },
-      {
-        "text": "The switch places the new CRC value in the FCS field and forwards the frame.",
-        "correct": false
-      },
-      {
-        "text": "The switch notifies the source of the bad frame.",
-        "correct": false
-      },
-      {
-        "text": "The switch drops the frame.",
-        "correct": true
-      }
+    "question_number": 20,
+    "global_question_number": 48,
+    "question": "What are two ways to protect a computer from malware? (Choose two.)",
+    "question_type": "multiple_choice",
+    "score": 2.0,
+    "max_score": 2.0,
+    "got_correct": true,
+    "options": [
+      "Delete unused software.",
+      "Empty the browser cache.",
+      "Defragment the hard disk.",
+      "Use antivirus software.",
+      "Keep software up to date."
     ],
-    "gotCorrect": false,
-    "id": "47353664"
+    "correct_answer": [
+      "Use antivirus software.",
+      "Keep software up to date."
+    ],
+    "explanation": "Defensa contra malware debe ser por capas: software antivirus/antimalware actualizado para detectar y mitigar amenazas, junto con mantener el sistema operativo y las aplicaciones actualizados con los últimos parches de seguridad."
   },
   {
-    "description": {
-      "images": [],
-      "text": "Pregunta 54Two network engineers are discussing the methods used to forward frames through a switch. What is an important concept related to the cut-through method of switching?"
-    },
-    "answers": [
-      {
-        "text": "Packets can be relayed with errors when fast-forward switching is used.",
-        "correct": true
-      },
-      {
-        "text": "Fragment-free switching is the typical cut-through method of switching.",
-        "correct": false
-      },
-      {
-        "text": "Fast-forward switching can be viewed as a compromise between store-and-forward switching and fragment-free switching.",
-        "correct": false
-      },
-      {
-        "text": "The fragment-free switching offers the lowest level of latency.",
-        "correct": false
-      }
+    "question_number": 21,
+    "global_question_number": 49,
+    "question": "Which two commands could be used to check if DNS name resolution is working properly on a Windows PC? (Choose two.)",
+    "question_type": "multiple_choice",
+    "score": 2.0,
+    "max_score": 2.0,
+    "got_correct": true,
+    "options": [
+      "ping cisco.com",
+      "nbtstat cisco.com",
+      "net cisco.com",
+      "nslookup cisco.com",
+      "ipconfig /flushdns"
     ],
-    "gotCorrect": true,
-    "id": "47353666"
+    "correct_answer": [
+      "ping cisco.com",
+      "nslookup cisco.com"
+    ],
+    "explanation": "Para diagnosticar DNS en Windows, nslookup realiza una consulta directa al resolver DNS, y ping <nombre> prueba la resolución de nombres antes de intentar el envío de paquetes ICMP."
+  },
+  {
+    "question_number": 22,
+    "global_question_number": 50,
+    "question": "A small advertising company has a web server that provides critical business service. The company connects to the Internet through a leased line service to an ISP. Which approach best provides cost effective redundancy for the Internet connection?",
+    "question_type": "single_choice",
+    "score": 2.0,
+    "max_score": 2.0,
+    "got_correct": true,
+    "options": [
+      "Add another web server to prepare failover support.",
+      "Add multiple connections between the switches and the edge router.",
+      "Add a second NIC to the web server.",
+      "Add a connection to the Internet via a DSL line to another ISP."
+    ],
+    "correct_answer": "Add a connection to the Internet via a DSL line to another ISP.",
+    "explanation": "Redundancia Internet exige eliminar puntos únicos de falla en el enlace externo; agregar una conexión DSL secundaria hacia un ISP diferente ofrece una ruta alternativa rentable en caso de fallo del enlace principal."
+  },
+  {
+    "question_number": 23,
+    "global_question_number": 51,
+    "question": "Only employees connected to IPv6 interfaces are having difficulty connecting to remote networks. The analyst wants to verify that IPv6 routing has been enabled. What is the best command to use to accomplish the task?",
+    "question_type": "single_choice",
+    "score": 0.0,
+    "max_score": 2.0,
+    "got_correct": false,
+    "options": [
+      "show running-config",
+      "show interfaces",
+      "show ip nat translations",
+      "copy running-config startup-config"
+    ],
+    "correct_answer": "show running-config",
+    "explanation": "Para confirmar que un router Cisco tiene habilitado el encaminamiento IPv6 ('ipv6 unicast-routing'), el comando show running-config permite revisar la configuración activa global donde se declara dicha directiva."
+  },
+  {
+    "question_number": 24,
+    "global_question_number": 52,
+    "question": "What happens when a switch receives a frame and the calculated CRC value is different than the value that is in the FCS field?",
+    "question_type": "single_choice",
+    "score": 0.0,
+    "max_score": 2.0,
+    "got_correct": false,
+    "options": [
+      "The switch floods the frame to all ports except the port through which the frame arrived to notify the hosts of the error.",
+      "The switch places the new CRC value in the FCS field and forwards the frame.",
+      "The switch notifies the source of the bad frame.",
+      "The switch drops the frame."
+    ],
+    "correct_answer": "The switch drops the frame.",
+    "explanation": "Ethernet incluye FCS (Frame Check Sequence) calculada mediante CRC; si el CRC calculado no coincide con el FCS recibido, la trama está dañada y el switch la descarta inmediatamente."
+  },
+  {
+    "question_number": 25,
+    "global_question_number": 53,
+    "question": "Which two issues can cause both runts and giants in Ethernet networks? (Choose two.)",
+    "question_type": "multiple_choice",
+    "score": 0.0,
+    "max_score": 2.0,
+    "got_correct": false,
+    "options": [
+      "a malfunctioning NIC",
+      "CRC errors",
+      "half-duplex operations",
+      "using the incorrect cable type",
+      "electrical interference on serial interfaces"
+    ],
+    "correct_answer": [
+      "a malfunctioning NIC",
+      "half-duplex operations"
+    ],
+    "explanation": "En Ethernet, runt suele ser una trama inferior al mínimo de 64 bytes y giant supera el máximo aplicable de 1518 bytes. Tarjetas de red (NIC) defectuosas y operaciones en half-duplex con colisiones excesivas son causas comunes de tramas con tamaños anómalos tanto menores como mayores al estándar."
+  },
+  {
+    "question_number": 26,
+    "global_question_number": 54,
+    "question": "Two network engineers are discussing the methods used to forward frames through a switch. What is an important concept related to the cut-through method of switching?",
+    "question_type": "single_choice",
+    "score": 2.0,
+    "max_score": 2.0,
+    "got_correct": true,
+    "options": [
+      "Packets can be relayed with errors when fast-forward switching is used.",
+      "Fragment-free switching is the typical cut-through method of switching.",
+      "Fast-forward switching can be viewed as a compromise between store-and-forward and fragment-free switching.",
+      "The fragment-free switching offers the lowest level of latency."
+    ],
+    "correct_answer": "Packets can be relayed with errors when fast-forward switching is used.",
+    "explanation": "En el modo fast-forward switching (método cut-through), el switch comienza a reenviar la trama tan pronto como lee la dirección MAC de destino (primeros 6 bytes), sin esperar a verificar el campo FCS al final de la trama; por tanto, tramas con errores pueden ser reenviadas."
+  },
+  {
+    "question_number": 27,
+    "global_question_number": 55,
+    "question": "Which two functions are performed at the LLC sublayer of the OSI Data Link Layer to facilitate Ethernet communication? (Choose two.)",
+    "question_type": "multiple_choice",
+    "score": 0.0,
+    "max_score": 2.0,
+    "got_correct": false,
+    "options": [
+      "places information in the Ethernet frame that identifies which network layer protocol is being encapsulated by the frame",
+      "applies source and destination MAC addresses to Ethernet frame",
+      "implements CSMA/CD over legacy shared half-duplex media",
+      "integrates Layer 2 flows between 10 Gigabit Ethernet over fiber and 1 Gigabit Ethernet over copper",
+      "adds Ethernet control information to network protocol data"
+    ],
+    "correct_answer": [
+      "places information in the Ethernet frame that identifies which network layer protocol is being encapsulated by the frame",
+      "adds Ethernet control information to network protocol data"
+    ],
+    "explanation": "La subcapa LLC (Logical Link Control, IEEE 802.2) actúa como intermediaria entre la subcapa MAC y la capa de red: coloca información en la trama que identifica qué protocolo de capa de red está encapsulado y añade la información de control necesaria a los datos del protocolo de red."
   }
 ]

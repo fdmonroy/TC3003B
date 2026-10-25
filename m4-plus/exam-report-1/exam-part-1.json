@@ -1,548 +1,581 @@
 [
   {
-    "description": {
-      "images": [],
-      "text": "Pregunta 01What characteristic describes spyware?"
-    },
-    "answers": [
-      {
-        "text": "the use of stolen credentials to access private data",
-        "correct": false
-      },
-      {
-        "text": "an attack that slows or crashes a device or network service",
-        "correct": false
-      },
-      {
-        "text": "a network device that filters access and traffic coming into a network",
-        "correct": false
-      },
-      {
-        "text": "software that is installed on a user device and collects information about the user",
-        "correct": true
-      }
+    "question_number": 1,
+    "global_question_number": 1,
+    "question": "What characteristic describes spyware?",
+    "question_type": "single_choice",
+    "score": 1.5,
+    "max_score": 1.5,
+    "got_correct": true,
+    "options": [
+      "the use of stolen credentials to access private data",
+      "an attack that slows or crashes a device or network service",
+      "a network device that filters access and traffic coming into a network",
+      "software that is installed on a user device and collects information about the user"
     ],
-    "gotCorrect": true,
-    "id": "47353613"
+    "correct_answer": "software that is installed on a user device and collects information about the user",
+    "explanation": "El spyware es un programa malicioso que obtiene información del usuario o del dispositivo sin autorización adecuada. Puede registrar teclas, hábitos de navegación, credenciales o actividad. No debe confundirse con la denegación de servicio, el uso indebido de cuentas ni con un dispositivo de seguridad de red."
   },
   {
-    "description": {
-      "images": [],
-      "text": "Pregunta 02Which statement describes network security?"
-    },
-    "answers": [
-      {
-        "text": "It ensures sensitive corporate data is available for authorized users.",
-        "correct": true
-      },
-      {
-        "text": "It supports growth over time in accordance with approved network design procedures.",
-        "correct": false
-      },
-      {
-        "text": "It prioritizes data flows in order to give priority to delay-sensitive traffic.",
-        "correct": false
-      },
-      {
-        "text": "It synchronizes traffic flows using timestamps.",
-        "correct": false
-      }
+    "question_number": 2,
+    "global_question_number": 2,
+    "question": "Which statement describes network security?",
+    "question_type": "single_choice",
+    "score": 1.5,
+    "max_score": 1.5,
+    "got_correct": true,
+    "options": [
+      "It ensures sensitive corporate data is available for authorized users.",
+      "It supports growth over time in accordance with approved network design procedures.",
+      "It prioritizes data flows in order to give priority to delay-sensitive traffic.",
+      "It synchronizes traffic flows using timestamps."
     ],
-    "gotCorrect": true,
-    "id": "47353614"
+    "correct_answer": "It ensures sensitive corporate data is available for authorized users.",
+    "explanation": "La seguridad de red protege confidencialidad, integridad y disponibilidad (CIA). La disponibilidad significa que usuarios autorizados pueden acceder a servicios y datos cuando los necesitan. Calidad de servicio, escalabilidad y sincronización temporal son requisitos de operación diferentes, aunque pueden apoyar una arquitectura segura."
   },
   {
-    "description": {
-      "images": [],
-      "text": "Pregunta 04What is a user trying to determine when issuing a ping 10.1.1.1 command on a PC?"
-    },
-    "answers": [
-      {
-        "text": "if the TCP/IP stack is functioning on the PC without putting traffic on the wire",
-        "correct": false
-      },
-      {
-        "text": "if there is connectivity with the destination device",
-        "correct": true
-      },
-      {
-        "text": "what type of device is at the destination",
-        "correct": false
-      },
-      {
-        "text": "the path that traffic will take to reach the destination",
-        "correct": false
-      }
+    "question_number": 3,
+    "global_question_number": 3,
+    "question": "Which two devices would be described as intermediary devices? (Choose two.)",
+    "question_type": "multiple_choice",
+    "score": 2.0,
+    "max_score": 2.0,
+    "got_correct": true,
+    "options": [
+      "gaming console",
+      "assembly line robots",
+      "retail scanner",
+      "IPS",
+      "server",
+      "wireless LAN controller"
     ],
-    "gotCorrect": true,
-    "id": "47353616"
+    "correct_answer": [
+      "IPS",
+      "wireless LAN controller"
+    ],
+    "explanation": "Los dispositivos intermediarios conectan segmentos de red, procesan o reenvían tráfico y aplican políticas. Ejemplos: routers, switches, controladores WLAN, firewalls e IPS. Los dispositivos finales, como servidores, consolas y sensores, son emisores o receptores de información. Deben elegirse exactamente dos opciones."
   },
   {
-    "description": {
-      "images": [
-        "https://experiencia21.tec.mx/courses/703411/files/295951450/preview"
-      ],
-      "text": "Pregunta 05Refer to the exhibit. An administrator is trying to configure the switch but receives the error message that is displayed in the exhibit. What is the problem?"
-    },
-    "answers": [
-      {
-        "text": "The administrator is already in global configuration mode.",
-        "correct": false
-      },
-      {
-        "text": "The entire command, configure terminal, must be used.",
-        "correct": false
-      },
-      {
-        "text": "The administrator must first enter privileged EXEC mode before issuing the command.",
-        "correct": true
-      },
-      {
-        "text": "The administrator must connect via the console port to access global configuration mode.",
-        "correct": false
-      }
+    "question_number": 4,
+    "global_question_number": 4,
+    "question": "What is a user trying to determine when issuing a ping 10.1.1.1 command on a PC?",
+    "question_type": "single_choice",
+    "score": 1.5,
+    "max_score": 1.5,
+    "got_correct": true,
+    "options": [
+      "if the TCP/IP stack is functioning on the PC without putting traffic on the wire",
+      "if there is connectivity with the destination device",
+      "what type of device is at the destination",
+      "the path that traffic will take to reach the destination"
     ],
-    "gotCorrect": true,
-    "id": "47353617"
+    "correct_answer": "if there is connectivity with the destination device",
+    "explanation": "El comando ping envía mensajes ICMP Echo Request y espera Echo Reply del destino. Permite una prueba básica de alcance IP, pero no diagnostica por sí solo el motivo de un fallo ni garantiza que todos los servicios de aplicación funcionen. Para probar la pila local se usa normalmente ping 127.0.0.1 o ::1; para la ruta, tracert/traceroute."
   },
   {
-    "description": {
-      "images": [],
-      "text": "Pregunta 06What is a characteristic of a switch virtual interface (SVI)?"
-    },
-    "answers": [
-      {
-        "text": "An SVI is created in software and requires a configured IP address and a subnet mask in order to provide remote access to the switch.",
-        "correct": true
-      },
-      {
-        "text": "SVIs come preconfigured on Cisco switches.",
-        "correct": false
-      },
-      {
-        "text": "Although it is a virtual interface, it needs to have physical hardware on the device associated with it.",
-        "correct": false
-      },
-      {
-        "text": "SVIs do not require the no shutdown command to become enabled.",
-        "correct": false
-      }
+    "question_number": 5,
+    "global_question_number": 5,
+    "question": "Refer to the exhibit. An administrator is trying to configure the switch but receives the error message that is displayed in the exhibit. What is the problem?",
+    "question_type": "single_choice",
+    "score": 2.0,
+    "max_score": 2.0,
+    "got_correct": true,
+    "options": [
+      "The administrator is already in global configuration mode.",
+      "The entire command, configure terminal, must be used.",
+      "The administrator must first enter privileged EXEC mode before issuing the command.",
+      "The administrator must connect via the console port to access global configuration mode."
     ],
-    "gotCorrect": true,
-    "id": "47353618"
+    "correct_answer": "The administrator must first enter privileged EXEC mode before issuing the command.",
+    "explanation": "En Cisco IOS, el prompt 'Switch>' indica EXEC usuario y 'Switch#' indica EXEC privilegiado; 'Switch(config)#' indica configuración global. El comando configure terminal (o conf t) solo se ejecuta desde EXEC privilegiado después de enable. No hace falta entrar por un cable de consola si ya hay acceso remoto autorizado."
   },
   {
-    "description": {
-      "images": [],
-      "text": "Pregunta 09Which PDU is processed when a host computer is de-encapsulating a message at the transport layer of the TCP/IP model?"
-    },
-    "answers": [
-      {
-        "text": "bits",
-        "correct": false
-      },
-      {
-        "text": "segment",
-        "correct": true
-      },
-      {
-        "text": "frame",
-        "correct": false
-      },
-      {
-        "text": "packet",
-        "correct": false
-      }
+    "question_number": 6,
+    "global_question_number": 6,
+    "question": "What is a characteristic of a switch virtual interface (SVI)?",
+    "question_type": "single_choice",
+    "score": 1.5,
+    "max_score": 1.5,
+    "got_correct": true,
+    "options": [
+      "An SVI is created in software and requires a configured IP address and a subnet mask in order to provide remote access to the switch.",
+      "SVIs come preconfigured on Cisco switches.",
+      "Although it is a virtual interface, it needs to have physical hardware on the device associated with it.",
+      "SVIs do not require the no shutdown command to become enabled."
     ],
-    "gotCorrect": true,
-    "id": "47353621"
+    "correct_answer": "An SVI is created in software and requires a configured IP address and a subnet mask in order to provide remote access to the switch.",
+    "explanation": "Una SVI (interface vlan N) es una interfaz lógica de capa 3 sobre una VLAN, utilizada para administración o inter-VLAN cuando el equipo admite enrutamiento. Ejemplo: interface vlan 1; ip address 192.168.1.2 255.255.255.0; no shutdown. Su estado efectivo depende también de la VLAN y de puertos operativos asociados; hay diferencias entre modelos y configuraciones predeterminadas."
   },
   {
-    "description": {
-      "images": [
-        "https://experiencia21.tec.mx/courses/703411/files/295951446/preview"
-      ],
-      "text": "Pregunta 11Refer to the exhibit. What is the maximum possible throughput between the PC and the server?"
-    },
-    "answers": [
+    "question_number": 7,
+    "global_question_number": 7,
+    "question": "Match the descriptions to the terms.",
+    "question_type": "matching",
+    "score": 2.0,
+    "max_score": 2.0,
+    "got_correct": true,
+    "options": [
+      "CLI",
+      "GUI",
+      "kernel",
+      "shell"
+    ],
+    "matching_pairs": [
       {
-        "text": "1000 Mb/s",
-        "correct": false
+        "prompt": "users interact with the operating system by typing commands",
+        "target": "CLI"
       },
       {
-        "text": "100 Mb/s",
-        "correct": false
+        "prompt": "enables the user to interact with the operating system by pointing and clicking",
+        "target": "GUI"
       },
       {
-        "text": "128 kb/s",
-        "correct": true
+        "prompt": "the part of the OS that interacts directly with the device hardware",
+        "target": "kernel"
       },
       {
-        "text": "10 Mb/s",
-        "correct": false
+        "prompt": "the part of the operating system that interfaces with applications and the user",
+        "target": "shell"
       }
     ],
-    "gotCorrect": true,
-    "id": "47353623"
+    "correct_answer": {
+      "users interact with the operating system by typing commands": "CLI",
+      "enables the user to interact with the operating system by pointing and clicking": "GUI",
+      "the part of the OS that interacts directly with the device hardware": "kernel",
+      "the part of the operating system that interfaces with applications and the user": "shell"
+    },
+    "explanation": "CLI: interfaz de comandos por texto, por ejemplo Cisco IOS. GUI: interfaz gráfica manejada con ventanas, iconos y puntero. Kernel: núcleo del sistema operativo que administra hardware, memoria, procesos y controladores. Shell: intérprete o entorno de interacción entre usuario/aplicaciones y servicios del sistema; una shell puede ser textual o integrarse en otros entornos."
   },
   {
-    "description": {
-      "images": [],
-      "text": "Pregunta 14What OSI physical layer term describes the measure of the transfer of bits across a medium over a given period of time?"
-    },
-    "answers": [
-      {
-        "text": "goodput",
-        "correct": false
-      },
-      {
-        "text": "throughput",
-        "correct": true
-      },
-      {
-        "text": "latency",
-        "correct": false
-      },
-      {
-        "text": "bandwidth",
-        "correct": false
-      }
+    "question_number": 8,
+    "global_question_number": 8,
+    "question": "Which two OSI model layers have the same functionality as two layers of the TCP/IP model? (Choose two.)",
+    "question_type": "multiple_choice",
+    "score": 2.0,
+    "max_score": 2.0,
+    "got_correct": true,
+    "options": [
+      "session",
+      "transport",
+      "physical",
+      "data link",
+      "network"
     ],
-    "gotCorrect": true,
-    "id": "47353626"
+    "correct_answer": [
+      "transport",
+      "network"
+    ],
+    "explanation": "El modelo OSI tiene siete capas; el TCP/IP se presenta normalmente con cuatro. La capa de transporte de ambos modelos comparte nombre y objetivos básicos (segmentación, control de flujo, fiabilidad opcional). La capa de red OSI equivale funcionalmente a la capa de Internet de TCP/IP (direccionamiento lógico y encaminamiento). Aplicación, presentación y sesión de OSI se agrupan en la capa de aplicación de TCP/IP."
   },
   {
-    "description": {
-      "images": [],
-      "text": "Pregunta 15Although CSMA/CD is still a feature of Ethernet, why is it no longer necessary?"
-    },
-    "answers": [
-      {
-        "text": "the use of full-duplex capable Layer 2 switches",
-        "correct": true
-      },
-      {
-        "text": "the use of CSMA/CA",
-        "correct": false
-      },
-      {
-        "text": "the development of half-duplex switch operation",
-        "correct": false
-      },
-      {
-        "text": "the virtually unlimited availability of IPv6 addresses",
-        "correct": false
-      },
-      {
-        "text": "the use of Gigabit Ethernet speeds",
-        "correct": false
-      }
+    "question_number": 9,
+    "global_question_number": 9,
+    "question": "Which PDU is processed when a host computer is de-encapsulating a message at the transport layer of the TCP/IP model?",
+    "question_type": "single_choice",
+    "score": 1.5,
+    "max_score": 1.5,
+    "got_correct": true,
+    "options": [
+      "bits",
+      "segment",
+      "frame",
+      "packet"
     ],
-    "gotCorrect": false,
-    "id": "47353627"
+    "correct_answer": "segment",
+    "explanation": "La unidad de datos de protocolo (PDU) cambia de nombre según la capa: capa física (bits), capa de enlace de datos (frame/trama), capa de red (packet/paquete) y capa de transporte (segment/segmento o datagrama en UDP). En la des-encapsulación, la capa de transporte recibe un paquete de la capa de red, retira el encabezado de red y procesa el segmento."
   },
   {
-    "description": {
-      "images": [],
-      "text": "Pregunta 17A network team is comparing topologies for connecting on a shared media. Which physical topology is an example of a hybrid topology for a LAN?"
-    },
-    "answers": [
-      {
-        "text": "ring",
-        "correct": false
-      },
-      {
-        "text": "extended star",
-        "correct": true
-      },
-      {
-        "text": "bus",
-        "correct": false
-      },
-      {
-        "text": "partial mesh",
-        "correct": false
-      }
+    "question_number": 10,
+    "global_question_number": 10,
+    "question": "Which three layers of the OSI model are comparable in function to the application layer of the TCP/IP model? (Choose three.)",
+    "question_type": "multiple_choice",
+    "score": 2.0,
+    "max_score": 2.0,
+    "got_correct": true,
+    "options": [
+      "physical",
+      "network",
+      "session",
+      "transport",
+      "data link",
+      "application",
+      "presentation"
     ],
-    "gotCorrect": false,
-    "id": "47353629"
+    "correct_answer": [
+      "session",
+      "application",
+      "presentation"
+    ],
+    "explanation": "En el modelo TCP/IP de cuatro capas, la capa de aplicación asume las funciones que el modelo OSI distribuye entre aplicación (servicios de red directos a programas), presentación (formato de datos, compresión, cifrado) y sesión (control de diálogos y sincronización)."
   },
   {
-    "description": {
-      "images": [],
-      "text": "Pregunta 18What does a router do when it receives a Layer 2 frame over the network medium?"
-    },
-    "answers": [
-      {
-        "text": "forwards the new frame appropriate to the medium of that segment of the physical network",
-        "correct": false
-      },
-      {
-        "text": "de-encapsulates the frame",
-        "correct": true
-      },
-      {
-        "text": "determines the best path",
-        "correct": false
-      },
-      {
-        "text": "re-encapsulates the packet into a new frame",
-        "correct": false
-      }
+    "question_number": 11,
+    "global_question_number": 11,
+    "question": "Refer to the exhibit. What is the maximum possible throughput between the PC and the server?",
+    "question_type": "single_choice",
+    "score": 2.0,
+    "max_score": 2.0,
+    "got_correct": true,
+    "options": [
+      "1000 Mb/s",
+      "100 Mb/s",
+      "128 kb/s",
+      "10 Mb/s"
     ],
-    "gotCorrect": false,
-    "id": "47353630"
+    "correct_answer": "128 kb/s",
+    "explanation": "El caudal máximo de una ruta extremo a extremo está limitado por el enlace más lento (cuello de botella). Si la ruta comprende segmentos a 10 Mb/s, 100 Mb/s o 1 Gb/s pero contiene un enlace WAN de 128 kb/s, el throughput máximo alcanzable no puede superar los 128 kb/s del enlace más estrecho."
   },
   {
-    "description": {
-      "images": [],
-      "text": "Pregunta 19If the default gateway is configured incorrectly on the host, what is the impact on communications?"
-    },
-    "answers": [
-      {
-        "text": "The host can communicate with other hosts on the local network, but is unable to communicate with hosts on remote networks.",
-        "correct": true
-      },
-      {
-        "text": "There is no impact on communications.",
-        "correct": false
-      },
-      {
-        "text": "The host is unable to communicate on the local network.",
-        "correct": false
-      },
-      {
-        "text": "The host can communicate with other hosts on remote networks, but is unable to communicate with hosts on the local network.",
-        "correct": false
-      }
+    "question_number": 12,
+    "global_question_number": 12,
+    "question": "Which two statements describe the characteristics of fiber-optic cabling? (Choose two.)",
+    "question_type": "multiple_choice",
+    "score": 0.0,
+    "max_score": 2.0,
+    "got_correct": false,
+    "options": [
+      "Fiber-optic cabling has high signal loss.",
+      "Fiber-optic cabling uses LEDs for single-mode cables and laser technology for multimode cables.",
+      "Multimode fiber-optic cabling carries signals from multiple sending devices.",
+      "Fiber-optic cabling does not conduct electricity.",
+      "Fiber-optic cabling is primarily used as backbone cabling."
     ],
-    "gotCorrect": true,
-    "id": "47353631"
+    "correct_answer": [
+      "Fiber-optic cabling does not conduct electricity.",
+      "Fiber-optic cabling is primarily used as backbone cabling."
+    ],
+    "explanation": "La fibra transmite pulsos de luz en un núcleo dieléctrico; por ello no conduce corriente y es resistente a interferencia electromagnética. Se usa a menudo en troncales, edificios y enlaces largos por capacidad y atenuación comparativamente baja. Monomodo y multimodo describen modos de propagación, no cantidad de transmisores; los tipos de fuente dependen del estándar concreto."
   },
   {
-    "description": {
-      "images": [],
-      "text": "Pregunta 20Why is NAT not needed in IPv6?"
-    },
-    "answers": [
+    "question_number": 13,
+    "global_question_number": 13,
+    "question": "Match the description with the media.",
+    "question_type": "matching",
+    "score": 2.0,
+    "max_score": 2.0,
+    "got_correct": true,
+    "options": [
+      "This type of copper media is used in industrial or similar environments where there is a lot of interference.",
+      "Traditionally used for television but can now be used in a network to connect the customer location to the wiring of the customer premises.",
+      "This type of media is used for high transmission speed and can also transfer data over long distances.",
+      "This type of media provides the most mobility options."
+    ],
+    "matching_pairs": [
       {
-        "text": "Any host or user can get a public IPv6 network address because the number of available IPv6 addresses is extremely large.",
-        "correct": true
+        "prompt": "STP",
+        "target": "This type of copper media is used in industrial or similar environments where there is a lot of interference."
       },
       {
-        "text": "Because IPv6 has integrated security, there is no need to hide the IPv6 addresses of internal networks.",
-        "correct": false
+        "prompt": "coaxial",
+        "target": "Traditionally used for television but can now be used in a network to connect the customer location to the wiring of the customer premises."
       },
       {
-        "text": "The end-to-end connectivity problems that are caused by NAT are solved because the number of routes increases with the number of nodes that are connected to the Internet.",
-        "correct": false
+        "prompt": "optical fiber",
+        "target": "This type of media is used for high transmission speed and can also transfer data over long distances."
       },
       {
-        "text": "The problems that are induced by NAT applications are solved because the IPv6 header improves packet handling by intermediate routers.",
-        "correct": false
+        "prompt": "wireless",
+        "target": "This type of media provides the most mobility options."
       }
     ],
-    "gotCorrect": true,
-    "id": "47353632"
+    "correct_answer": {
+      "STP": "This type of copper media is used in industrial or similar environments where there is a lot of interference.",
+      "coaxial": "Traditionally used for television but can now be used in a network to connect the customer location to the wiring of the customer premises.",
+      "optical fiber": "This type of media is used for high transmission speed and can also transfer data over long distances.",
+      "wireless": "This type of media provides the most mobility options."
+    },
+    "explanation": "STP (Shielded Twisted Pair) incorpora blindaje que ayuda a mitigar EMI/RFI; coaxial tiene conductor central y blindaje, históricamente TV y acceso por cable; fibra usa luz para enlaces rápidos y largos; inalámbrico usa ondas de radio y movilidad. Elegir el medio requiere valorar alcance, interferencia, costo y capacidad."
   },
   {
-    "description": {
-      "images": [],
-      "text": "Pregunta 21What routing table entry has a next hop address associated with a destination network?"
-    },
-    "answers": [
-      {
-        "text": "C and L source routes",
-        "correct": false
-      },
-      {
-        "text": "local routes",
-        "correct": false
-      },
-      {
-        "text": "remote routes",
-        "correct": true
-      },
-      {
-        "text": "directly-connected routes",
-        "correct": false
-      }
+    "question_number": 14,
+    "global_question_number": 14,
+    "question": "What OSI physical layer term describes the measure of the transfer of bits across a medium over a given period of time?",
+    "question_type": "single_choice",
+    "score": 1.5,
+    "max_score": 1.5,
+    "got_correct": true,
+    "options": [
+      "goodput",
+      "throughput",
+      "latency",
+      "bandwidth"
     ],
-    "gotCorrect": false,
-    "id": "47353633"
+    "correct_answer": "throughput",
+    "explanation": "Bandwidth es la capacidad nominal del medio o canal; throughput es la cantidad efectiva de bits transferidos por unidad de tiempo; goodput cuenta datos útiles de aplicación excluyendo sobrecarga; latency es el tiempo que tarda en llegar un mensaje. Puede ocurrir throughput menor que bandwidth por congestión, retransmisiones, protocolos y equipos intermedios."
   },
   {
-    "description": {
-      "images": [],
-      "text": "Pregunta 22Which term describes a field in the IPv4 packet header that contains a unicast, multicast, or broadcast address?"
-    },
-    "answers": [
-      {
-        "text": "header checksum",
-        "correct": false
-      },
-      {
-        "text": "protocol",
-        "correct": false
-      },
-      {
-        "text": "TTL",
-        "correct": false
-      },
-      {
-        "text": "destination IPv4 address",
-        "correct": true
-      }
+    "question_number": 15,
+    "global_question_number": 15,
+    "question": "Although CSMA/CD is still a feature of Ethernet, why is it no longer necessary?",
+    "question_type": "single_choice",
+    "score": 0.0,
+    "max_score": 2.0,
+    "got_correct": false,
+    "options": [
+      "the use of full-duplex capable Layer 2 switches",
+      "the use of CSMA/CA",
+      "the development of half-duplex switch operation",
+      "the virtually unlimited availability of IPv6 addresses",
+      "the use of Gigabit Ethernet speeds"
     ],
-    "gotCorrect": false,
-    "id": "47353634"
+    "correct_answer": "the use of full-duplex capable Layer 2 switches",
+    "explanation": "CSMA/CD (Carrier Sense Multiple Access with Collision Detection) se utilizaba en Ethernet compartida de medio dúplex, por ejemplo hubs. En Ethernet moderna con switches y enlaces full-duplex, los extremos pueden transmitir y recibir simultáneamente y no comparten un dominio de colisión, por lo que no se usa detección de colisiones. No confundir con CSMA/CA, empleado en redes Wi-Fi."
   },
   {
-    "description": {
-      "images": [
-        "https://experiencia21.tec.mx/courses/703411/files/295951447/preview"
-      ],
-      "text": "Pregunta 23Refer to the exhibit. PC1 issues an ARP request because it needs to send a packet to PC3. In this scenario, what will happen next?"
-    },
-    "answers": [
-      {
-        "text": "RT1 will send an ARP reply with the PC3 MAC address.",
-        "correct": false
-      },
-      {
-        "text": "RT1 will send an ARP reply with its own Fa0/0 MAC address.",
-        "correct": true
-      },
-      {
-        "text": "RT1 will forward the ARP request to PC3.",
-        "correct": false
-      },
-      {
-        "text": "SW1 will send an ARP reply with its Fa0/1 MAC address.",
-        "correct": false
-      }
+    "question_number": 16,
+    "global_question_number": 16,
+    "question": "Which two acronyms represent the data link sublayers that Ethernet relies upon to operate? (Choose two.)",
+    "question_type": "multiple_choice",
+    "score": 0.0,
+    "max_score": 2.0,
+    "got_correct": false,
+    "options": [
+      "CSMA",
+      "MAC",
+      "FCS",
+      "LLC",
+      "SFD"
     ],
-    "gotCorrect": false,
-    "id": "47353635"
+    "correct_answer": [
+      "MAC",
+      "LLC"
+    ],
+    "explanation": "IEEE 802 distingue dos subcapas de enlace: LLC (Logical Link Control, IEEE 802.2) y MAC (Media Access Control, IEEE 802.3 para Ethernet). LLC identifica protocolos de capa superior y ofrece una interfaz lógica; MAC define direcciones físicas, acceso al medio y partes del formato de trama. CSMA, FCS y SFD son métodos o campos, no subcapas."
   },
   {
-    "description": {
-      "images": [],
-      "text": "Pregunta 24Which destination address is used in an ARP request frame?"
-    },
-    "answers": [
-      {
-        "text": "255.255.255.255",
-        "correct": false
-      },
-      {
-        "text": "the physical address of the destination host",
-        "correct": false
-      },
-      {
-        "text": "FFFF.FFFF.FFFF",
-        "correct": true
-      },
-      {
-        "text": "0.0.0.0",
-        "correct": false
-      },
-      {
-        "text": "AAAA.AAAA.AAAA",
-        "correct": false
-      }
+    "question_number": 17,
+    "global_question_number": 17,
+    "question": "A network team is comparing topologies for connecting on a shared media. Which physical topology is an example of a hybrid topology for a LAN?",
+    "question_type": "single_choice",
+    "score": 0.0,
+    "max_score": 1.5,
+    "got_correct": false,
+    "options": [
+      "ring",
+      "extended star",
+      "bus",
+      "partial mesh"
     ],
-    "gotCorrect": true,
-    "id": "47353636"
+    "correct_answer": "extended star",
+    "explanation": "Las topologías físicas describen cómo se conectan los medios y equipos. Una estrella extendida conecta varias estrellas mediante switches centrales/de distribución y combina estructuras jerárquicas; se considera un ejemplo de topología híbrida. Bus, anillo y malla parcial son topologías distintas con patrones de conectividad propios."
   },
   {
-    "description": {
-      "images": [
-        "https://experiencia21.tec.mx/courses/703411/files/295951448/preview"
-      ],
-      "text": "Pregunta 25Refer to the exhibit. The exhibit shows a small switched network and the contents of the MAC address table of the switch. PC1 has sent a frame addressed to PC3. What will the switch do with the frame?"
-    },
-    "answers": [
-      {
-        "text": "The switch will forward the frame only to ports 1 and 3.",
-        "correct": false
-      },
-      {
-        "text": "The switch will forward the frame only to port 2.",
-        "correct": false
-      },
-      {
-        "text": "The switch will discard the frame.",
-        "correct": false
-      },
-      {
-        "text": "The switch will forward the frame to all ports.",
-        "correct": false
-      },
-      {
-        "text": "The switch will forward the frame to all ports except port 4.",
-        "correct": true
-      }
+    "question_number": 18,
+    "global_question_number": 18,
+    "question": "What does a router do when it receives a Layer 2 frame over the network medium?",
+    "question_type": "single_choice",
+    "score": 0.0,
+    "max_score": 2.0,
+    "got_correct": false,
+    "options": [
+      "forwards the new frame appropriate to the medium of that segment of the physical network",
+      "de-encapsulates the frame",
+      "determines the best path",
+      "re-encapsulates the packet into a new frame"
     ],
-    "gotCorrect": false,
-    "id": "47353637"
+    "correct_answer": "de-encapsulates the frame",
+    "explanation": "El router procesa el paquete IP transportado dentro de la trama recibida. Primero valida y retira la encapsulación de enlace de entrada (de-encapsulation); después consulta rutas, reduce TTL/Hop Limit según corresponda, y encapsula el paquete en otra trama del enlace de salida. La pregunta solicita el primer paso al recibir la trama, no el ciclo completo."
   },
   {
-    "description": {
-      "images": [],
-      "text": "Pregunta 27A router boots and enters setup mode. What is the reason for this?"
-    },
-    "answers": [
-      {
-        "text": "The POST process has detected hardware failure.",
-        "correct": false
-      },
-      {
-        "text": "Cisco IOS is missing from flash memory.",
-        "correct": false
-      },
-      {
-        "text": "The IOS image is corrupt.",
-        "correct": false
-      },
-      {
-        "text": "The configuration file is missing from NVRAM.",
-        "correct": true
-      }
+    "question_number": 19,
+    "global_question_number": 19,
+    "question": "If the default gateway is configured incorrectly on the host, what is the impact on communications?",
+    "question_type": "single_choice",
+    "score": 1.5,
+    "max_score": 1.5,
+    "got_correct": true,
+    "options": [
+      "The host can communicate with other hosts on the local network, but is unable to communicate with hosts on remote networks.",
+      "There is no impact on communications.",
+      "The host is unable to communicate on the local network.",
+      "The host can communicate with other hosts on remote networks, but is unable to communicate with hosts on the local network."
     ],
-    "gotCorrect": true,
-    "id": "47353639"
+    "correct_answer": "The host can communicate with other hosts on the local network, but is unable to communicate with hosts on remote networks.",
+    "explanation": "La puerta de enlace predeterminada se utiliza para reenviar tráfico hacia destinos fuera de la red local. Si está mal configurada, el host aún puede comunicarse con otros equipos de su misma subred mediante ARP y tramas locales, pero no podrá encaminar paquetes a redes remotas."
   },
   {
-    "description": {
-      "images": [
-        "https://experiencia21.tec.mx/courses/703411/files/295951449/preview"
-      ],
-      "text": "Pregunta 28Refer to the exhibit. A network administrator is connecting a new host to the Registrar LAN. The host needs to communicate with remote networks. What IP address would be configured as the default gateway on the new host?"
-    },
-    "answers": [
+    "question_number": 20,
+    "global_question_number": 20,
+    "question": "Why is NAT not needed in IPv6?",
+    "question_type": "single_choice",
+    "score": 2.0,
+    "max_score": 2.0,
+    "got_correct": true,
+    "options": [
+      "Any host or user can get a public IPv6 network address because the number of available IPv6 addresses is extremely large.",
+      "Because IPv6 has integrated security, there is no need to hide the IPv6 addresses of internal hosts.",
+      "The end-to-end connectivity problems that are caused by NAT are solved because the IPv6 header improves packet handling by intermediate routers.",
+      "The problems that are induced by NAT applications are solved because the IPv6 address of the header is inspected by fewer routers."
+    ],
+    "correct_answer": "Any host or user can get a public IPv6 network address because the number of available IPv6 addresses is extremely large.",
+    "explanation": "IPv6 tiene direcciones de 128 bits, una enorme capacidad que supera la escasez de direcciones que motivó IPv4 NAT. Por tanto, no se requiere NAT como mecanismo fundamental para ahorrar espacio de direcciones públicas, restaurando la conectividad extremo a extremo."
+  },
+  {
+    "question_number": 21,
+    "global_question_number": 21,
+    "question": "What routing table entry has a next hop address associated with a destination network?",
+    "question_type": "single_choice",
+    "score": 0.0,
+    "max_score": 1.5,
+    "got_correct": false,
+    "options": [
+      "C and L source routes",
+      "local routes",
+      "remote routes",
+      "directly-connected routes"
+    ],
+    "correct_answer": "remote routes",
+    "explanation": "Una ruta directamente conectada (código C) corresponde a una red asociada con interfaz activa; una ruta local (L) representa la dirección IP propia del equipo, usualmente /32 IPv4. Una ruta remota necesita reenvío a otro router (next hop) o información de salida. Los códigos concretos dependen del origen: estática (S), OSPF (O), etc."
+  },
+  {
+    "question_number": 22,
+    "global_question_number": 22,
+    "question": "Which term describes a field in the IPv4 packet header that contains a unicast, multicast, or broadcast address?",
+    "question_type": "single_choice",
+    "score": 0.0,
+    "max_score": 1.5,
+    "got_correct": false,
+    "options": [
+      "header checksum",
+      "protocol",
+      "TTL",
+      "destination IPv4 address"
+    ],
+    "correct_answer": "destination IPv4 address",
+    "explanation": "El encabezado IPv4 contiene dirección IP de origen, dirección IP de destino, TTL, Protocol y Header Checksum entre otros campos. La dirección de destino identifica un host (unicast), un grupo (multicast) o broadcast IPv4 según la categoría y contexto. No debe confundirse con el puerto de transporte ni con el MAC destino de la trama Ethernet."
+  },
+  {
+    "question_number": 23,
+    "global_question_number": 23,
+    "question": "Refer to the exhibit. PC1 issues an ARP request because it needs to send a packet to PC3. In this scenario, what will happen next?",
+    "question_type": "single_choice",
+    "score": 0.0,
+    "max_score": 2.0,
+    "got_correct": false,
+    "options": [
+      "RT1 will send an ARP reply with the PC3 MAC address.",
+      "RT1 will send an ARP reply with its own Fa0/0 MAC address.",
+      "RT1 will forward the ARP request to PC3.",
+      "SW1 will send an ARP reply with its Fa0/1 MAC address."
+    ],
+    "correct_answer": "RT1 will send an ARP reply with its own Fa0/0 MAC address.",
+    "explanation": "ARP resuelve una dirección IPv4 del siguiente salto a su dirección MAC local. Para llegar desde PC1 hasta un host de otra red (PC3), PC1 no necesita conocer la MAC remota de PC3: ARP pregunta por la MAC de su gateway (RT1 Fa0/0). Los routers no reenvían broadcasts ARP de capa 2 de forma normal."
+  },
+  {
+    "question_number": 24,
+    "global_question_number": 24,
+    "question": "Which destination address is used in an ARP request frame?",
+    "question_type": "single_choice",
+    "score": 1.5,
+    "max_score": 1.5,
+    "got_correct": true,
+    "options": [
+      "255.255.255.255",
+      "the physical address of the destination host",
+      "FFFF.FFFF.FFFF",
+      "0.0.0.0",
+      "AAAA.AAAA.AAAA"
+    ],
+    "correct_answer": "FFFF.FFFF.FFFF",
+    "explanation": "ARP Request se transporta en una trama Ethernet con dirección MAC de destino de broadcast FFFF.FFFF.FFFF (FF:FF:FF:FF:FF:FF). De este modo, todos los switches inundan la trama por la VLAN y todos los hosts del segmento local reciben y procesan la solicitud."
+  },
+  {
+    "question_number": 25,
+    "global_question_number": 25,
+    "question": "Refer to the exhibit. The exhibit shows a small switched network and the contents of the MAC address table of the switch. PC1 has sent a frame addressed to PC3. What will the switch do with the frame?",
+    "question_type": "single_choice",
+    "score": 0.0,
+    "max_score": 2.0,
+    "got_correct": false,
+    "options": [
+      "The switch will forward the frame only to ports 1 and 3.",
+      "The switch will forward the frame only to port 2.",
+      "The switch will discard the frame.",
+      "The switch will forward the frame to all ports.",
+      "The switch will forward the frame to all ports except port 4."
+    ],
+    "correct_answer": "The switch will forward the frame to all ports except port 4.",
+    "explanation": "El switch aprende direcciones MAC de origen y mantiene una tabla CAM/MAC por VLAN y puerto. Al recibir una trama destinada a una MAC desconocida, realiza flooding por todos los puertos activos de la VLAN salvo el puerto de entrada. Según la tabla de la imagen, el frame llega por el puerto 4, de ahí la excepción."
+  },
+  {
+    "question_number": 26,
+    "global_question_number": 26,
+    "question": "Match the command with the device mode at which the command is entered.",
+    "question_type": "matching",
+    "score": 0.0,
+    "max_score": 2.0,
+    "got_correct": false,
+    "options": [
+      "R1(config)#",
+      "R1>",
+      "R1#",
+      "R1(config-line)#",
+      "R1(config-if)#"
+    ],
+    "matching_pairs": [
       {
-        "text": "203.0.113.3",
-        "correct": false
+        "prompt": "service password-encryption",
+        "target": "R1(config)#"
       },
       {
-        "text": "10.234.235.254",
-        "correct": false
+        "prompt": "enable",
+        "target": "R1>"
       },
       {
-        "text": "192.168.235.1",
-        "correct": false
+        "prompt": "copy running-config startup-config",
+        "target": "R1#"
       },
       {
-        "text": "192.168.234.114",
-        "correct": false
+        "prompt": "login",
+        "target": "R1(config-line)#"
       },
       {
-        "text": "192.168.235.234",
-        "correct": true
+        "prompt": "ip address 192.168.4.4 255.255.255.0",
+        "target": "R1(config-if)#"
       }
     ],
-    "gotCorrect": false,
-    "id": "47353640"
+    "correct_answer": {
+      "service password-encryption": "R1(config)#",
+      "enable": "R1>",
+      "copy running-config startup-config": "R1#",
+      "login": "R1(config-line)#",
+      "ip address 192.168.4.4 255.255.255.0": "R1(config-if)#"
+    },
+    "explanation": "Modos Cisco IOS: R1> EXEC usuario; R1# EXEC privilegiado; R1(config)# configuración global; R1(config-line)# configuración de línea; R1(config-if)# configuración de interfaz. El indicador del prompt es esencial: comandos existentes pueden fallar si se ingresan desde un modo incorrecto."
+  },
+  {
+    "question_number": 27,
+    "global_question_number": 27,
+    "question": "A router boots and enters setup mode. What is the reason for this?",
+    "question_type": "single_choice",
+    "score": 1.5,
+    "max_score": 1.5,
+    "got_correct": true,
+    "options": [
+      "The POST process has detected hardware failure.",
+      "Cisco IOS is missing from flash memory.",
+      "The IOS image is corrupt.",
+      "The configuration file is missing from NVRAM."
+    ],
+    "correct_answer": "The configuration file is missing from NVRAM.",
+    "explanation": "Un equipo Cisco que no encuentra un startup-config válido en la memoria NVRAM durante el arranque entra automáticamente en el cuadro de diálogo interactivo de configuración inicial (System Configuration Dialog / Setup Mode)."
+  },
+  {
+    "question_number": 28,
+    "global_question_number": 28,
+    "question": "Refer to the exhibit. A network administrator is connecting a new host to the Registrar LAN. The host needs to communicate with remote networks. What IP address would be configured as the default gateway on the new host?",
+    "question_type": "single_choice",
+    "score": 0.0,
+    "max_score": 2.0,
+    "got_correct": false,
+    "options": [
+      "203.0.113.3",
+      "10.234.235.254",
+      "192.168.235.1",
+      "192.168.234.114",
+      "192.168.235.234"
+    ],
+    "correct_answer": "192.168.235.234",
+    "explanation": "El gateway de un host debe ser la IP de una interfaz de router o SVI capa 3 accesible en su propia LAN. En la imagen del video, la interfaz de acceso de Registrar LAN utiliza 192.168.235.234; las otras direcciones pertenecen a interfaces o segmentos distintos."
   }
 ]
