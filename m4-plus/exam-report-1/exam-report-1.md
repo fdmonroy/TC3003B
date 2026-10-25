@@ -1,7 +1,7 @@
 ---
 title: "CCNA Practice Final 1"
-subtitle: "Implementación de redes de área amplia y servicios distribuidos (TC3003B.570)"
-author: "Fernando Daniel Monroy Sánchez (A01750536)"
+subtitle: "Implementación de redes de área amplia y servicios distribuidos"
+author: "Fernando Daniel Monroy Sánchez - A01750536"
 date: "22 de octubre de 2026"
 lang: es-MX
 ---
